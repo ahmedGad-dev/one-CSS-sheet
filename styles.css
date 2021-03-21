@@ -1,0 +1,852 @@
+html, body{padding: 0; margin: 0;}
+html {
+   overflow-x: hidden;
+  position: relative;
+  }
+.clear-fix{clear: both;}
+.official-background{
+
+  background: url('https://www.spark-sys.com/images/common/pattern.png') repeat,linear-gradient(136deg, rgba(156, 34, 34, 0.35) 0%, 
+  rgba(93, 26, 46, 0.65) 55%, rgba(41, 20, 54, 0.9) 95%, rgba(35, 19, 55, 0.9) 100%);
+  background-image: url('images/transparent.jpg') repeat;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+
+button{cursor: pointer;}
+
+/* header customiztion*/
+
+.social-media-header{ display: flex; justify-content: center; }
+.social-media-header a{cursor: pointer; }
+
+.fainting{  color: rgb(0,0,45);   background-color: black;  font-weight: bold; font-variant: small-caps; text-transform: none;  }
+.the-after-class a{text-decoration: none; }
+.head-title{position: relative; top: 5%; left: 5%; width: 41.5%; border-bottom: 2px double grey; height: auto; color: rgb(152, 119, 119); display: flex; flex-wrap: wrap; padding-bottom: 1%;
+    letter-spacing: 1.8px; word-spacing: 2px;  text-transform: uppercase; font-size: 23px; font-weight: bold;}
+.the-logo h2 {position: relative;  color: rgb(0, 0,65); display: inline-block; }
+/* end of header customiztion*/
+
+
+/********GOALS AND DESCRIPTION PART STYLING**************/
+
+.goals-container{  width: 100%; height: 750px; display: flex; justify-content: center;  flex-direction: row; align-items: center; justify-content: center;}
+.about-us{ height:500px; display: flex; margin-bottom: 120px; justify-content: center;}
+
+.div-content{ color: white; display: flex; flex-direction: column; margin: 0px;
+  justify-content: flex-start;  flex-basis: 100%; max-width: 90%;
+padding: 0px;}
+
+
+.block-span{
+	font-size: 30px;
+	font-weight: lighter;
+	font-variant: normal;
+	text-transform: uppercase;
+  margin-top: 10px;
+	text-align: center!important;
+  letter-spacing: 0.3em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  position: relative;
+  right: 0;
+  display: block;
+}
+
+.inner-content-container{ display: flex; flex-direction:row;  }
+
+ .mission-vision-goals-container{display: flex; flex-wrap: wrap; flex-direction: column;  width: 100%; flex-basis: 33%; justify-content: space-between; margin-top: 100px;}
+ .our-mission-container{height: 700px;}
+ .our-mission{ height: 450px;  border-radius: 15px 50px;  color: white; font-size: 20px; text-align: justify; text-align-last: center;  flex-basis: 50%; }
+
+ .our-mission-inner{
+      position: relative;
+      width: 50%; 
+      text-align: justify;
+      text-align-last: center;
+      word-spacing: 0; 
+      letter-spacing: 1.2px;
+      width: 45%; 
+      position: relative;
+      top: -85%; 
+      height: 30%;
+      padding: 15px;
+      background-color: #071C35;
+      color: white;
+    }
+
+  .our-mission-inner h2{
+    font-size: 24px;  
+    color: white; 
+  }
+  .our-mission-inner p{
+   font-size: 18px;}
+
+  .mini-image{  width: 100%;
+                height: auto;
+                outline: 3px solid white;
+                outline-offset: -4px;
+                outline-offset: -20px; box-sizing: border-box;
+                height: 550px;}
+
+
+/********GOALS AND DESCRIPTION PART STYLING**************/
+
+
+/* footer customization*/
+#main-foot{ display: flex; flex-wrap: wrap; flex-direction: column; }
+.footer-inner-content{display: flex; flex-direction: row; justify-content: space-around;}
+.social-media{display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 35px; order: 3; align-items: center; flex-direction: column;}
+
+footer{background-color: #071C35; display: flex; flex-wrap: wrap; }
+.sochmed{ background-color: rgb(119,136,153); padding: 5px; margin-left: 20px;  }
+.sochmed:hover {opacity: 0.8;}
+.copyrights{position: relative; bottom: 0px; text-align: center; background-color: rgb(31, 31, 31); font-style: italic; color: wheat;}
+.signature{font-size: smaller;}
+.footer-links{ padding: 10px; color: white; order: 1; margin: 15px 0px; display: flex; align-items: center;}
+.middle  {display: flex; order: 2; flex-direction: row; justify-content: center; align-items: center; border: none; color: white; font-size: 28px; letter-spacing: 1.3px;}
+#main-foot a img {cursor: pointer; transform: scale(90%); }
+.face-svg {margin-bottom: 7px;}
+.fa-position {position: relative; top: 20px;}
+.footer-links li a span{cursor: pointer; color: white; }
+/* End of footer*/
+
+
+
+/* Form RWD customization*/
+
+  label[for="locations"]{font-size: 14px;}
+  label[for="email"]{font-size: 10px;}
+
+/* end of Form RWD*/
+
+/*******  MAADI GARDENS PAGE DESIGN  *******/
+.albums-container25{
+  width: 100%;
+   display: flex;
+    flex-direction: row;
+     align-items: center;
+      flex-wrap: wrap;
+       justify-content: space-around;
+        color: #071C35;
+  }
+.paras-icons-container{width: 30%; margin-bottom: 50px; padding: 25px; display: flex; justify-content: space-between; flex-direction: column; color: rgb(47,79,79); font-weight: bold;
+   font-size: 22px; word-spacing: 1.5px; letter-spacing: 0.78px; text-align: center; word-break: normal; text-align-last: center; border: 3.5px double #0066FF;}
+
+.maadi-svg{width: 500px; height: 500px; transform: scale(25%); }
+
+.images-container{ width: 100%; height: 250px; display: flex; justify-content: center; flex-direction: row; }
+
+.paras-icons-title{
+  font-size:28px;
+   font-weight: bold;
+   color: #071C35; 
+   text-align: center; 
+   position: relative;
+   text-transform: uppercase; 
+   word-spacing: 1.5px; 
+   letter-spacing: 0.78px;
+
+   }
+
+.img-container-img{width: 25%;
+   height: 25%; }
+
+
+.img-container-img{width: 130px; height: 160px;}
+
+/* end of main page design*/
+/*******  MAADI GARDENS PAGE DESIGN  *******/
+
+/*******  Alba-Elshorouk PAGE DESIGN  *******/
+
+#alba-header{background-image: url("alba.jpg"); background-size: auto;  height: 660px; background-repeat: no-repeat;
+background-size: cover; margin-bottom: 0px; width: auto; }
+.main-title{text-align: center; color: rgb(50, 0, 0); text-transform: capitalize; font-size: 40px; 
+  font-variant: small-caps; text-transform: none; font-weight: 100; letter-spacing: 1.3px; word-spacing: 0.5px; }
+/*******  Advertisement div design **********/
+#alba-div{position: relative; left: 20px;  display: flex; flex-wrap: wrap; flex-direction: column;  border-right: 1.5px solid black; width: 300px; }
+.alba-para{color: white; font-weight: bold; text-align: center; background-color: transparent; text-transform: capitalize;  width: 300px; display: inline-block; margin-top: 0px; 
+text-align: center; }
+.para{border-bottom: 3px solid yellow; border-spacing: 1px; margin-top: 5px; font-size: 20px; animation-name: alba-div-animation; animation-duration: 10s;
+  animation-iteration-count: infinite; animation-timing-function: linear; animation-fill-mode: both;}
+.phones-para{ font-size: 20px; animation-name: alba-div-animation; animation-duration: 10s;
+  animation-iteration-count: infinite;} 
+#last-para{margin-bottom: 30px; margin-top: 0px;}
+@keyframes alba-div-animation{
+  0%{font-size: 20px;}
+  25%{font-size: 25px;}
+  50%{font-size: 30px;}
+  75%{font-size: 25px;}
+  100%{font-size: 20px;}
+}
+
+.fa:hover { opacity: 0.7;}
+.fa-facebook { background: #3B5998; color: white;}
+.fa-youtube { background: #bb0000; color: white;}
+.fa-instagram { background: #125688; color: white;}
+/******* ALBA Advertisement div design **********/
+
+/*******  Alba-Elshorouk PAGE DESIGN  *******/
+
+.alba-page-flex-container{display: flex; flex-wrap: wrap;  background-color: white; height: 700px; flex-direction: row; justify-content: flex-start;
+transform: scale(90%);  background-repeat:  no-repeat; margin-top: 0px; margin-bottom: 0px;  background-size: contain; flex-grow: 0; flex-shrink: 0; align-items: flex-start; align-content: flex-start;}
+.alba-page-flex-container img{width: 100%; height: 100%;}
+.alba-page-images{width: 680px; height: 650px;  border-radius: 50%; display: flex; flex-shrink: 1; }
+
+.alba-page-paras{  display: flex; font-weight: bold;
+                  flex-wrap: wrap; letter-spacing: 1px; text-transform: capitalize; word-break: normal;
+                  padding: 10px; flex-grow: 0;  } 
+
+.custom1{  font-weight: bold; width: 40%; border-radius: 15%; transform: skew(0deg); display: flex;  border: 1.5px solid red; position: relative; top: -95%; left: 2%;}
+
+
+.alba-page-paras ul{list-style-type: none; padding: 25px; font-size: 16px;  text-align: justify;}
+.alba-para-titles{text-align: center; display: block; font-weight: bold; font-size: 25px;}
+.alba-para-list{list-style-type: circle; text-transform: capitalize;}
+.title-span{margin-bottom: 8px; display: block; width: 100%; font-size: 22px; font-weight: bold;  position: relative; left: 0;}
+.list-content{margin-bottom: 8px; font-weight: bold; width: 100%; text-align: center;}
+.information-para-image{ border-radius: 0%; }
+.information-para{columns: 2; letter-spacing: 0.7px; text-align: center; text-align-last: center; padding: 15px; padding-bottom: 15px; height: 620px; }
+.alba-information-para{order: 1;}
+.content2{font-size: 20px; text-align: center; font-weight: bold; }
+.alba-form{background-image: url("images/alba-form-bg.jpg"); background-position: center; background-size: cover; height: 1550px; }
+.alba-form-content{top: 550px; height: 700px;}
+.alba-main{ background-color: white;}
+/*******  Alba-Elshorouk PAGE DESIGN  *******/ 
+
+
+/*** MAADI & ALBA MUTUAL DESIGN****/
+.instalment-div{height: 450px; background-color: white; width: 500px; 
+background-size: contain;}
+.trial{height: 550px; width: 500px; background-color: white; color: rgb(0, 0, 31); font-size: 38px; position: relative;
+    word-spacing: 10px; line-height: 100px; padding: 30px; 
+  border-radius: 10px; text-transform: capitalize; text-align: center;  }
+
+.maadi-alba-trial{
+  height: 450px; width: 500px; }
+.maadi-alba-installment-div{background-color: white; width: 100%; height: 400px; }
+  .squared{background-color: rgb(0, 0, 31); color: white; padding: 15px;}
+  .circle{background-color: rgb(0, 0, 31); color: white;  border-radius: 50%; padding: 15px;}
+  .golden-btns{background-color: rgb(207,181,59);
+     padding: 15px 20px 15px 20px; margin-right: 10px; position: relative; cursor: pointer; font-size: 18px; font-weight: bold; font-size: 24px;
+    text-transform: capitalize; border-radius: 10%;}
+    .golden-btns-alba{padding: 5px 20px 5px 20px; line-height: 3rem;}
+  .golden-btns:active {top: -10px;}
+  .btns-holder{display: flex; justify-content: space-between; margin: 20px 0px 20px 0px; padding: 20px;}
+/*** MAADI & ALBA MUTUAL DESIGN****/
+
+
+
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; min-height:700px; float: right; position: relative; }
+
+@keyframes slidy {
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+  }
+  figure { 
+    margin: 0; background-color: url('https://www.spark-sys.com/images/common/pattern.png') repeat,linear-gradient(136deg, rgba(156, 34, 34, 0.9) 0%, rgba(93, 26, 46, 0.89) 55%, rgba(41, 20, 54, 0.9) 95%, rgba(35, 19, 55, 0.9) 100%);
+    font-weight: 100;
+  }
+  
+  figure.slider { 
+    position: relative; width: 500%; 
+     font-size: 0; animation: 20s slidy infinite; 
+  }
+  figure.slider figure { 
+    width: 20%; height: 800px;
+    display: inline-block;  position: inherit; 
+  }
+ 
+  figure.slider figure figcaption { 
+    position: absolute; bottom: 0;
+    background: rgba(1, 1, 1 ,0.8);
+    color:white; width: 100%;
+    font-size: 30px; padding: .6rem; font-weight: bold; text-align: center; letter-spacing: 1.4px; word-spacing: 1.5px; line-height: 1.2rem;
+    height: 60px; position: relative; top: 10px;
+  }
+ 
+
+    /*******************NAVIGATION BAR CUSTOMIZATION**********/
+            
+             
+           /*   #home-nav * { font-family:  "SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace;}  */
+             
+    
+     /*****************BEATY SECTION CUSTOMIZATION********/
+           .bty-para{ 
+              opacity: 0.5; float: right;  
+              animation: translator 10s ease-in-out infinite; line-height: 1.5em; letter-spacing: 1.1px; word-spacing: 2px; text-align: center;
+              font-weight: bold; color: white; border-radius: 20%;  transform: translate(20%,-155%);}
+
+           @keyframes translator {
+             0%{transform: translate(-10%,-145%);}
+             25%{transform: translate(-20%,-135%);}
+             50%{transform: translate(-30%,-125%);}
+             75%{transform: translate(-40%,-115%);}
+             100%{transform: translate(-50%,-95%);}
+           }
+
+           
+
+          .home-page-div{
+             border-radius: 20%; top: 0;  font-weight: bold; transform: none; left: 0px; background-color: transparent; width: 100%;
+            } 
+
+
+
+/**********RESPONISVNESS OF HOME PAGE MAIN CONTENT******************/
+@media(max-width:1500px){
+  .mini-image{transform: scale(80%);  left: 70%; top: -100%;}
+  .vision-mini-image{left: -60%;}
+ 
+}
+
+@media(max-width:1400px){.our-mission{height: 550px;}
+
+
+}
+
+
+
+
+@media(max-width: 1100px){
+.home-page-div{
+ height: 350px;
+font-size: 22px;
+letter-spacing: 1.1px;
+word-spacing: 2px;
+text-align: center;
+font-weight: bold;
+}
+.home-page-div .golden-btns {line-height: 1.5rem; margin-top: 0px; font-size: 16px; }
+.home-page-instalment-div  { height: 350px; width: 400px;}
+.our-mission-inner{font-size: 18px;}
+  }
+
+  @media(max-width: 900px){
+  .our-mission-inner{font-size: 15px;}
+  .our-mission{flex-basis: 85%; height: 360px; justify-content: center; justify-self: center; position: relative; left: 10%;}
+  .mini-image{left: 0; top: -15%;}
+}
+
+
+
+@media(max-width: 800px){
+  .home-page-div{font-size: 18px; line-height: 75px;}
+  .home-page-instalment-div  { width: 350px; height: 290px;}
+  .bty-para{ transform: translate(0%,-290%); animation: translator3 10s ease-in-out infinite;}
+}
+
+@media(max-width: 700px){ 
+  .our-mission-inner{font-size: 14px;}
+  .mini-image{transform: scale(80%); }
+  
+}
+
+@media(max-width: 600px){ 
+.mini-image{height: 450px;}
+}
+
+
+
+@media(max-width:450px){
+.our-mission-inner{font-size: 14px; }
+.maadi-alba-container{margin-bottom: 100px;}
+}
+
+
+@media(max-width:400px){
+  .maadi-alba-container{margin-bottom: 0px;}
+  .mini-image{height: 350px;}
+  
+}
+
+
+@media(max-width: 370px){
+  .our-mission-inner{width: 60%;}
+}
+
+
+    .column {
+      float: left;
+      width: 25%;
+      padding: 10px;
+    }
+    .column img {
+      opacity: 0.8; 
+      cursor: pointer; 
+    }
+    .column img:hover {
+      opacity: 1;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    #imgtext {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      color: white;
+      font-size: 20px;
+    }
+    .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+    }
+  
+  
+  
+  
+    .head-projects{
+      height: 500px;
+      width: 100%;
+      margin-top: 0px;
+      margin-bottom: 75px;
+      padding: 50px 50px 100px 50px;
+    }
+  
+  
+   .inner-content2{
+    
+     border: 3px cyan;
+     flex-basis: 50%;
+     width: 100%;
+     justify-content: space-around;
+   }
+  
+   .gallery1{
+     border: 1px solid black;
+     height: 1500px;
+     flex-basis: 25%;
+     padding: 20px;
+     width: 50%;
+   }
+  
+   .head-para2{
+    
+     font-size: 16px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     background-color: white;
+     width: 30%;
+     color: rgb(47,79,79);   
+     font-weight: 600;
+     margin-right: 25px;
+     text-align: center;
+   }
+   
+ 
+ .phone-icon{display: inline; height: 35px;}
+ .home-logo{ position: relative; left: 50px; top: 50px; width: 250px;}
+ 
+
+
+            .albums-container22 .inner-content{ 
+              width: 50%;
+            
+              word-wrap: wrap; 
+              letter-spacing: 0.5px;
+              word-spacing: 1px;
+              word-break: break-word;
+              text-align: justify;
+              color: rgb(0,0,45);
+              font-size:20px;
+              font-weight:normal;
+              line-height:150%;
+              padding:0px; 
+              font-weight: bold;
+              text-transform: capitalize;
+              position: relative;
+              left: 2%;
+              text-align-last: center;   
+              border-bottom: 3px solid rgb(47,79,79);
+             }
+             
+
+             @media(max-width: 996px){
+              .albums-container22 .inner-content{width: 80%;}
+             }
+
+            .gallery-div{
+              width: 100%; height: 50%;  display: flex; flex-wrap: wrap; flex-direction: row;  position: relative; justify-content: space-around; margin-top: 75px; 
+              align-items: center;
+            }
+
+            .gallery-divs1{
+              width:28%; height: 100%; margin-right: 15px; border: 3px double rgb(47,79,79); border-radius: 20px; position: relative; top: 10%; padding: 30px; display: flex; flex-wrap: wrap;
+            }
+            
+            .gallery-divs1:hover{border-style: dashed;}
+
+            .gallery-divs1 button{
+              padding: 15px; width: 70%; background-color: #071C35;  position: relative; left: 15%; right: 15%; margin-top: 40px; 
+              font-size: small; 
+              font-weight: bold; 
+              text-align: center; 
+              border-radius: 10px;
+              line-height: 2rem; font-variant: small-caps; letter-spacing: 1.5px;
+         
+              color: gainsboro;
+
+            }
+
+            .gallery-divs1 a{
+              text-decoration: none; color: gainsboro;
+            }
+
+            .gallery-divs1 img{margin:0 auto; height: 80%; width: 100%; border-radius: 20px; }
+            .projects-head img:hover{transform: scale(110%);}
+            .gallery-divs1 button:active{top: -10px;}
+            .num1{align-self: center; top: 12%;}
+            .num2{align-self: flex-end; top: -3%;}
+            .num3{align-self: center; top: 12%;}
+            .gallery-div-container{width: 100%; height: 1000px; display: none; justify-content: space-between;  background-image: url('images/gradient.png');}
+           .switch{
+            text-transform: uppercase; color: #5b6770; font-weight: 600; text-align: center; font-size: 18px; position: relative; left: -80%;}
+     
+            .gallery-div-header{
+               width: 100%;
+               height: 80%;            
+               display: flex; 
+               flex-wrap: wrap; 
+               flex-direction: row;  
+               position: relative;
+               justify-content: center; 
+               margin: 15px 5px 15px 15px;    
+               align-items: center;}
+
+
+
+            
+            .gallery-div-container h2 {text-align: center; text-transform: uppercase; margin-bottom: 50px; letter-spacing: 1.5px; word-spacing: 2px; font-size: 21px;}
+            .projects-head{width:45%;  height: 70%; margin-right: 15px; border: 3px double rgb(47,79,79); border-radius: 20px; position: relative; padding: 30px; display: flex; flex-wrap: wrap;
+             flex-direction: column; position: relative; top: -8.3%; left: 0; background-color: white;}
+             .projects-head button{
+               font-size: small; width: 80%; position: relative; right: 10%; left: 10%;
+             }
+
+            .paras-icons-container h3{ color: #071C35; letter-spacing: 1.5px; font-variant: small-caps;
+           text-transform: uppercase; margin-bottom: 15px; display: flex; align-self: flex-start;}
+            
+            .button-hover:hover{ outline:2px solid white; outline-offset: -4px; border:2px solid #071C35; -moz-outline-radius: 10px;}
+
+    
+            @media(max-width:1050px){
+              .head-projects{margin-bottom: 0;}
+            }
+
+
+/**************about us page design************/
+.map-frame{width: 100%; height: auto;}
+
+  .paras-icons-container{
+    width: 80%;
+    justify-content: space-around;
+  }
+
+  .images-container{align-items: flex-end; }
+  
+@media(max-width: 1000px){
+  .location-container{
+    height: 35%;
+  }
+  #expandedImg{display: none;}
+     
+}
+
+
+@media(max-width: 992){
+  .the-logo{display: none;}
+}
+
+
+
+@media(max-width: 900px){
+
+  .custom1{transform: scale(80%);
+  top: -100%; left: -3%;}
+}
+
+
+
+
+
+
+@media(max-width: 850px){
+  .gallery-div{flex-direction: column; height: 82%;  justify-content: space-around;} 
+  .gallery-divs1 {width: 70%; display: block; height: 30%;}
+  .gallery-divs1 .num1, .num2, .num3{top: 0%; align-self: center;}
+  .num1 {top: 0%;}
+  .gallery-divs1 button{margin-top: 20px;}
+  .projects-head{top: 0%; height: 350px;}
+ 
+  .paras-icons-container{
+    height: 40%; margin-top: 30px; text-align: justify; font-size: 25px;
+  }
+  
+  .services-container{flex-direction: column; align-items: center;}
+  .services1{width: 80%; height: 30%; margin-bottom: 75px;}
+  .services1 p {font-size: small; text-align: justify;}
+  .services1 h3{font-size: 18px;}
+  .first-service{margin-top: 25px;}
+}
+
+
+@media(max-width: 800px){
+ 
+  .gallery-divs1 {height: 30%;}
+  .gallery-divs1 button{margin-top: 20px;}
+  .projects-head{height: 45%;}
+  .our-mission-inner p{ font-size: small; margin-top: 15px;} 
+}
+
+
+@media(max-width: 750px){
+  .alba-page-paras{ width: 60%; }
+  .main-content-container{height: 3000px;}
+  .alba-page-flex-container{height: 30%;}
+  .maadi-alba-installment-div{transform: scale(80%);}
+  .alba-page-paras ul{font-size: 14px;}
+}
+
+
+@media(max-width: 735px){
+  
+  .maadi-alba-trial{font-size: 24px; width: 400px;}
+  .golden-btns-alba{font-size: 16px;}
+  .btns-holder .golden-btns-alba img{height: 16px;} 
+}
+
+
+
+
+@media(max-width: 600px){
+ 
+  .gallery-div{height: 85%; flex-basis: 33%; flex-direction: column; justify-content: center;}
+  .gallery-divs1{height: 550px; margin-bottom: 50px;}
+  .gallery-divs1 button{margin-top: 25px;}
+  .gallery-div-container{height: 1100px;}
+  .our-mission-inner h2{font-size: 18px;}
+  .mission-vision-goals-container{justify-content: center;}
+  .our-mission-container{height: 600px;}
+  .middle{transform: scale(70%);}
+  .our-mission-inner{width:  80%; top: -90%;}
+}
+
+@media(max-width: 500px){
+  .gallery-divs1{width: 80%;}
+  .paras-icons-container{font-size: 18px;}
+  .maadi-alba-installment-div{transform: scale(70%);}
+  #navigation{margin-bottom: 0px;}
+  .footer-para{font-size: 10px;}
+ 
+}
+
+
+@media(max-width: 520px){
+  .gallery-divs1{transform: scale(90%);} 
+}
+
+
+
+@media(max-width:450px){
+  .gallery-divs1 button{margin-bottom: 70px;}
+  .our-mission-inner{height: 40%;}
+  .paras-icons-container{font-size: 15px;}
+  .maadi-alba-installment-div{transform: scale(60%);}
+  .services1 h3{font-size: 14px;}
+}
+
+@media(max-width:425px){
+ 
+  .maadi-alba-installment-div{transform: scale(55%);}
+}
+
+@media(max-width:400px){
+  .maadi-alba-container{margin-bottom: 50px;}
+  
+  .mission-vision-goals-container{margin-top: 200px;}
+  .middle{transform: scale(60%);}
+}
+
+@media(max-width:370px){
+  .maadi-alba-container{margin-bottom: 0px;}
+  .block-span{font-size: 21px;}
+ 
+}
+
+.header-2{ position: relative; margin-bottom: 8%; }
+.phone-icon{height: 16px;}
+.whats{color: #071C35;}
+.down-arrow{ height: 36px; width: 36px; color: #071C35; display: block; margin-left: 50px;}
+
+.the-after-class::after{
+  content:"";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 20%;
+  margin-right: -20%;
+  margin-left: 10px;
+  border-bottom: 1px solid #5b6770;
+}
+
+.iframe-container iframe {overflow: hidden;}
+.form-control{font-size: 16px; color: black; font-weight: 600;}
+
+#locations {color: black; padding: 7px; font-weight: 600; margin-bottom: 15px;}
+.custom-card1{background-color: #071C35;
+   max-width: 20rem;
+    height: 24rem;
+}
+
+.custom-card1 .card-text{
+         letter-spacing: 1.2px; word-spacing: 1.5px; text-align: justify; word-break: normal;
+}
+.custom-card1 .card-header{
+ /* font-family: cursive;*/
+}
+
+.card .carousel-item img{max-width: 100%; height: auto;}
+
+.carosel-container{width: 50%; }
+
+.form-textarea::placeholder{color: #071C35;}
+
+@media(max-width:998px){
+    .custom-container{ display: flex; justify-content: space-between;}
+    .car-container{flex-direction: column;}
+    .carosel-container{width: 100%; }
+    .custom-card1{max-width: 30rem; height: 20rem;}
+}
+
+/*
+@media(max-width:1000px){
+  .the-after-class::after{display: none;}
+}*/
+
+@media(max-width:400px){
+  .custom-card1{height: 23rem;}
+}
+
+.custom-carousel-inner{border: 5px solid rgb(40, 70, 96) ; margin-top: 4rem; border-radius: 15%;}
+.project-carosels{display: flex; align-items: center; justify-content: center; }
+.card-img-top:hover{transform: scale(110%)}
+.card-img-top{transition: 250ms all linear;}
+
+.maadi-carousel-item img {height: 800px;}
+@media(max-width: 500px){
+  .maadi-carousel-item img {height: 400px;}
+  .the-after-class-perm{font-size: 20px;}
+}
+
+.map-div iframe {margin-bottom: 50px;}
+/*
+#nav-main{background-color: #071C35;}
+#home-nav{position: sticky;
+  position: -webkit-sticky;
+  top: 100px;
+z-index: 10;}*/
+
+
+  @media(max-width: 600px){
+    .form-textarea{max-width: 250px;}
+    .form-textarea2{max-width: 300px;}
+  }
+
+  @media(max-width: 500px){
+    .form-textarea2{max-width: 200px;}
+  }
+
+  @media(max-width: 400px){
+    .form-textarea{max-width: 200px;}
+  }
+
+
+
+            /******BACKGROUNDS*******/
+            .red-bg{background-color: red;}
+            .black-bg{background-color: rgba(0,0,0,0.5);}
+            .indigo{color: indigo;}
+            .golden{background-color: rgb(207,181,59)}
+            .fainting-alba{animation: none;}
+            .caffe-color{background-color: rgba(200,126,89,0.89)}
+            .navy{background-color: rgb(0,0,31);}
+            .dark-red{background-color:rgb(55, 0, 0);}
+            .lime-cyan{background: linear-gradient(to right, (limegreen, cyan))}
+            .home-main-color{color: #071C35;}
+            a {text-decoration: none;}
+            a:hover{text-decoration: none;}
+            .candidate{background-color:rgb(40, 70, 96);}
+
+         /********************BACKGROUNDS***********************/
+
+
+         /*********************FONTS****************************/
+          /* font-family: Gill Sans, Verdana;*/
+         /*   font-family:  'Allerta Stencil';*/
+           /*  font-family: 'Lato', sans-serif;*/
+           /*font-family:'Dekko'; 
+            font-family: 'Allerta Stencil'; */
+            /***   font-family: "apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";****/
+          /*font-family:Georgia,serif;*/
+          /*font-family: 'Courier New', Courier, 'times new roman' monospace;*/
+          /*font-family: "Muli-Regular"; */
+          /* font-family: Istok Web, sans-serif;*/
+          /*font-family: 'DEKKO';*/
+    /*      font-family:"apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue",Arial,
+                         "Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"*/
+                         /* font-family: "Muli-Bold";*/
+        /*********************FONTS****************************/
+
+         .form-control {
+          border: 1px solid #ccc;
+          display: block;
+          width: 100%;
+          height: 40px;
+          padding: 0 20px;
+          border-radius: 20px;
+          background: none; }
+          
+          .form-control:focus {
+            border: 1px solid #0d6efd }
+
+
+
+            .the-after-class-perm::after{
+
+              content:"";
+              display: inline-block;
+              height: 0.5em;
+              vertical-align: bottom;
+              width: 8%;
+              margin-right: -20%;
+              margin-left: 10px;
+              border-bottom: 1px solid #5b6770;
+            }
+
+

@@ -1,0 +1,80 @@
+
+
+
+.major-styling {
+     text-align: center;
+     letter-spacing: 1.8px;
+     word-spacing: 2px; 
+     color: rgb(0,0,45); font-size: 28px;
+     font-weight: bold;
+     background-color: white;
+     margin-bottom: 50px;
+      
+} 
+.major-styling h2{ 
+
+    text-transform: uppercase;
+
+}
+.gallery-inner-content1{
+    position: relative; top: -15%;
+}
+
+.major-styling p{
+    font-size: 18px; color: #5b6770; font-variant: small-caps; text-transform: capitalize;
+}
+
+.golden-btns-alba img{display: inline;}
+
+
+@media(max-width: 970px){
+    .column{width: 50%}
+    .gallery-inner-content1{margin-top: 50px;}
+    .maadi-alba-installment-div{transform: scale(85%);}
+  }
+  
+
+  @media(max-width: 750px){
+    .column{width: 50%}
+    .maadi-alba-installment-div{transform: scale(75%);}
+  }
+
+
+  @media(max-width: 500px){
+    .column{width: 80%}
+    .column{margin:0 auto;}
+    .maadi-alba-installment-div{transform: scale(50%);}
+  }
+
+  @media(max-width: 450px){
+    .maadi-alba-installment-div{transform: scale(42%); position: relative; top: -3%;}
+  }
+
+  @media(max-width: 350px){
+    .maadi-alba-installment-div{transform: scale(35%);  top: -4%;}
+  }
+
+
+  a{color: #071C35;}
+
+  .paragraph-edits{text-align: justify; word-break: normal; width: 80%; position: relative; left: 10%; }
+
+  #card-carousel-two{order: 2;}
+  #duplexes-cards-one{margin-bottom: 100px; margin-top: 50px;}
+  @media(max-width:992px){
+    #duplexes-cards{margin-bottom: 75px;}
+    #card-carousel-two{order: 1;}
+    .appartements-pargaraph{order: 2;}
+  }
+
+  .card-descrebtion-content{ text-align: justify;
+    text-align-last: center;
+     font-size: 20px;
+      color: #071C35;
+      letter-spacing: 1px;
+       word-spacing: 1.5px;
+        word-break: normal;}
+
+
+        .card-img-overlay{background-color: rgba(0, 0,0,0.5); color: white; height: 25%; text-align: center; text-transform: capitalize; 
+      }
