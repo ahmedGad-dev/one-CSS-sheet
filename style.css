@@ -261,20 +261,29 @@ select {
       border-bottom: 1px solid #5b6770;
   }
 
-  .registeration { padding-bottom: 100px; display: flex; flex-direction: row; justify-content: center; font-size: 20px; line-height: 3rem;
-    height: auto;  letter-spacing: 1.5px; word-spacing: 2px; font-family: 'Allerta Stencil'; text-transform: uppercase;  color: #071C35; 
-    width: 50%; align-items: center;}
-   .registeration p{color: #ae3c33;}
+  .registeration { display: flex;
+                   flex-direction: row;
+                   justify-content: center;
+                   align-items: center;
+                   font-size: 20px; 
+                   letter-spacing: 1px;
+                   word-spacing: 0.7px;
+                   font-family: 'Allerta Stencil'; 
+                   text-transform: uppercase;  
+                   width: 50%; 
+                   align-items: center;}
+
+   .registeration p{ font-family: 'Alegreya Sans SC', serif, sans-serif, cursive; }
+
    address h4{margin-bottom: 5px;}
 
    @media(max-width:1200px){
     .form-container .inner2 {left: 0%;}
      }
    
-
-  @media(max-width:1100px){
- .form-container .inner {left: 0%;}
-  }
+    @media(max-width:1100px){
+        .form-container .inner {left: 0%;}
+    }
 
   @media(max-width: 1000px){
     .form-address-container{height: auto; flex-direction: column; align-items: center; margin-top: 0%;}
@@ -283,9 +292,13 @@ select {
     .registeration{ display: flex; flex-direction: row; justify-content: center; } 
   }
 
+ 
+  @media(min-width:999px){
+    .registeration p{ padding-bottom: 100px;}
+  }
+
 
   @media(max-width: 780px){
- 
     .addresses-container{width:75%;}
   }
 
@@ -305,7 +318,6 @@ select {
   }
 
   @media(max-width: 650px){
-    .registeration{  padding-bottom: 0; left: 5%;  text-align: justify;  width: 100%; line-height: 2rem; } 
     .content-container{align-items: center;}
     .custom h4 {width: 70%;}
   }

@@ -48,10 +48,9 @@ padding: 0px;}
 
 
 .block-span{
-	font-size: 30px;
-	font-weight: lighter;
-	font-variant: normal;
-	text-transform: uppercase;
+	
+	font-variant: small-caps;
+	
   margin-top: 10px;
 	text-align: center!important;
   letter-spacing: 0.3em;
@@ -139,30 +138,12 @@ footer{background-color: #071C35; display: flex; flex-wrap: wrap; }
        justify-content: space-around;
         color: #071C35;
   }
-.paras-icons-container{width: 30%; margin-bottom: 50px; padding: 25px; display: flex; justify-content: space-between; flex-direction: column; color: rgb(47,79,79); font-weight: bold;
-   font-size: 22px; word-spacing: 1.5px; letter-spacing: 0.78px; text-align: center; word-break: normal; text-align-last: center; border: 3.5px double #0066FF;}
+
 
 .maadi-svg{width: 500px; height: 500px; transform: scale(25%); }
-
-.images-container{ width: 100%; height: 250px; display: flex; justify-content: center; flex-direction: row; }
-
-.paras-icons-title{
-  font-size:28px;
-   font-weight: bold;
-   color: #071C35; 
-   text-align: center; 
-   position: relative;
-   text-transform: uppercase; 
-   word-spacing: 1.5px; 
-   letter-spacing: 0.78px;
-
-   }
-
 .img-container-img{width: 25%;
    height: 25%; }
 
-
-.img-container-img{width: 130px; height: 160px;}
 
 /* end of main page design*/
 /*******  MAADI GARDENS PAGE DESIGN  *******/
@@ -226,23 +207,23 @@ transform: scale(90%);  background-repeat:  no-repeat; margin-top: 0px; margin-b
 
 
 /*** MAADI & ALBA MUTUAL DESIGN****/
-.instalment-div{height: 450px; background-color: white; width: 500px; 
-background-size: contain;}
-.trial{height: 550px; width: 500px; background-color: white; color: rgb(0, 0, 31); font-size: 38px; position: relative;
-    word-spacing: 10px; line-height: 100px; padding: 30px; 
-  border-radius: 10px; text-transform: capitalize; text-align: center;  }
+.instalment-div{height: 450px;
+               background-color: white;
+               width: 500px; 
+               background-size: contain;}
+.trial{ background-color: white;
+        color: rgb(0, 0, 31);
+        word-spacing: 5px;
+        padding: 30px; 
+        border-radius: 10px;
+        text-transform: capitalize;
+        text-align: center;}
 
-.maadi-alba-trial{
-  height: 450px; width: 500px; }
-.maadi-alba-installment-div{background-color: white; width: 100%; height: 400px; }
-  .squared{background-color: rgb(0, 0, 31); color: white; padding: 15px;}
-  .circle{background-color: rgb(0, 0, 31); color: white;  border-radius: 50%; padding: 15px;}
-  .golden-btns{background-color: rgb(207,181,59);
-     padding: 15px 20px 15px 20px; margin-right: 10px; position: relative; cursor: pointer; font-size: 18px; font-weight: bold; font-size: 24px;
-    text-transform: capitalize; border-radius: 10%;}
-    .golden-btns-alba{padding: 5px 20px 5px 20px; line-height: 3rem;}
+  .golden-btns{background-color:rgb(207,181,59); padding: 10px; color: white; border-radius: 20px; font-size: 16px;}
+  .squared{background-color: rgb(0, 0, 31); color: white; }
+  .circle{background-color: rgb(0, 0, 31); color: white;  border-radius: 50%; } 
   .golden-btns:active {top: -10px;}
-  .btns-holder{display: flex; justify-content: space-between; margin: 20px 0px 20px 0px; padding: 20px;}
+  
 /*** MAADI & ALBA MUTUAL DESIGN****/
 
 
@@ -335,7 +316,7 @@ word-spacing: 2px;
 text-align: center;
 font-weight: bold;
 }
-.home-page-div .golden-btns {line-height: 1.5rem; margin-top: 0px; font-size: 16px; }
+
 .home-page-instalment-div  { height: 350px; width: 400px;}
 .our-mission-inner{font-size: 18px;}
   }
@@ -465,34 +446,31 @@ font-weight: bold;
  
 
 
-            .albums-container22 .inner-content{ 
-              width: 50%;
-            
-              word-wrap: wrap; 
-              letter-spacing: 0.5px;
+            #alba-sky .inner-content{   
+              letter-spacing: 1px;
               word-spacing: 1px;
-              word-break: break-word;
-              text-align: justify;
-              color: rgb(0,0,45);
-              font-size:20px;
+              font-size:small;
               font-weight:normal;
-              line-height:150%;
-              padding:0px; 
-              font-weight: bold;
+              line-height:170%;
+              padding:0px;      
               text-transform: capitalize;
-              position: relative;
-              left: 2%;
+              text-align: center;
               text-align-last: center;   
               border-bottom: 3px solid rgb(47,79,79);
+              background-color: rgba(0,0,0,0.67);
+              color: white;
              }
+             #alba-sky{background: url('Images/Alba/alba-sky.jpg') center center no-repeat ;
+                       background-size: cover;       
+                      }
+
+                      .btn-group .btn{color: white;
+                      border: 2px solid white}
              
 
-             @media(max-width: 996px){
-              .albums-container22 .inner-content{width: 80%;}
-             }
 
             .gallery-div{
-              width: 100%; height: 50%;  display: flex; flex-wrap: wrap; flex-direction: row;  position: relative; justify-content: space-around; margin-top: 75px; 
+              width: 100%; height: 50%;  display: flex; flex-wrap: wrap; flex-direction: row;  position: relative; justify-content: space-around; 
               align-items: center;
             }
 
@@ -545,13 +523,11 @@ font-weight: bold;
             .gallery-div-container h2 {text-align: center; text-transform: uppercase; margin-bottom: 50px; letter-spacing: 1.5px; word-spacing: 2px; font-size: 21px;}
             .projects-head{width:45%;  height: 70%; margin-right: 15px; border: 3px double rgb(47,79,79); border-radius: 20px; position: relative; padding: 30px; display: flex; flex-wrap: wrap;
              flex-direction: column; position: relative; top: -8.3%; left: 0; background-color: white;}
+
              .projects-head button{
                font-size: small; width: 80%; position: relative; right: 10%; left: 10%;
-             }
+             }    
 
-            .paras-icons-container h3{ color: #071C35; letter-spacing: 1.5px; font-variant: small-caps;
-           text-transform: uppercase; margin-bottom: 15px; display: flex; align-self: flex-start;}
-            
             .button-hover:hover{ outline:2px solid white; outline-offset: -4px; border:2px solid #071C35; -moz-outline-radius: 10px;}
 
     
@@ -563,11 +539,7 @@ font-weight: bold;
 /**************about us page design************/
 .map-frame{width: 100%; height: auto;}
 
-  .paras-icons-container{
-    width: 80%;
-    justify-content: space-around;
-  }
-
+ 
   .images-container{align-items: flex-end; }
   
 @media(max-width: 1000px){
@@ -604,9 +576,7 @@ font-weight: bold;
   .gallery-divs1 button{margin-top: 20px;}
   .projects-head{top: 0%; height: 350px;}
  
-  .paras-icons-container{
-    height: 40%; margin-top: 30px; text-align: justify; font-size: 25px;
-  }
+
   
   .services-container{flex-direction: column; align-items: center;}
   .services1{width: 80%; height: 30%; margin-bottom: 75px;}
@@ -629,17 +599,10 @@ font-weight: bold;
   .alba-page-paras{ width: 60%; }
   .main-content-container{height: 3000px;}
   .alba-page-flex-container{height: 30%;}
-  .maadi-alba-installment-div{transform: scale(80%);}
   .alba-page-paras ul{font-size: 14px;}
 }
 
 
-@media(max-width: 735px){
-  
-  .maadi-alba-trial{font-size: 24px; width: 400px;}
-  .golden-btns-alba{font-size: 16px;}
-  .btns-holder .golden-btns-alba img{height: 16px;} 
-}
 
 
 
@@ -659,8 +622,6 @@ font-weight: bold;
 
 @media(max-width: 500px){
   .gallery-divs1{width: 80%;}
-  .paras-icons-container{font-size: 18px;}
-  .maadi-alba-installment-div{transform: scale(70%);}
   #navigation{margin-bottom: 0px;}
   .footer-para{font-size: 10px;}
  
@@ -676,14 +637,7 @@ font-weight: bold;
 @media(max-width:450px){
   .gallery-divs1 button{margin-bottom: 70px;}
   .our-mission-inner{height: 40%;}
-  .paras-icons-container{font-size: 15px;}
-  .maadi-alba-installment-div{transform: scale(60%);}
   .services1 h3{font-size: 14px;}
-}
-
-@media(max-width:425px){
- 
-  .maadi-alba-installment-div{transform: scale(55%);}
 }
 
 @media(max-width:400px){
@@ -695,8 +649,6 @@ font-weight: bold;
 
 @media(max-width:370px){
   .maadi-alba-container{margin-bottom: 0px;}
-  .block-span{font-size: 21px;}
- 
 }
 
 .header-2{ position: relative; margin-bottom: 8%; }
@@ -704,22 +656,13 @@ font-weight: bold;
 .whats{color: #071C35;}
 .down-arrow{ height: 36px; width: 36px; color: #071C35; display: block; margin-left: 50px;}
 
-.the-after-class::after{
-  content:"";
-  display: inline-block;
-  height: 0.5em;
-  vertical-align: bottom;
-  width: 20%;
-  margin-right: -20%;
-  margin-left: 10px;
-  border-bottom: 1px solid #5b6770;
-}
+
 
 .iframe-container iframe {overflow: hidden;}
 .form-control{font-size: 16px; color: black; font-weight: 600;}
 
 #locations {color: black; padding: 7px; font-weight: 600; margin-bottom: 15px;}
-.custom-card1{background-color: #071C35;
+.custom-card1{background-color: #525252;
    max-width: 20rem;
     height: 24rem;
 }
@@ -744,10 +687,6 @@ font-weight: bold;
     .custom-card1{max-width: 30rem; height: 20rem;}
 }
 
-/*
-@media(max-width:1000px){
-  .the-after-class::after{display: none;}
-}*/
 
 @media(max-width:400px){
   .custom-card1{height: 23rem;}
@@ -761,7 +700,7 @@ font-weight: bold;
 .maadi-carousel-item img {height: 800px;}
 @media(max-width: 500px){
   .maadi-carousel-item img {height: 400px;}
-  .the-after-class-perm{font-size: 20px;}
+  
 }
 
 .map-div iframe {margin-bottom: 50px;}
@@ -789,6 +728,7 @@ z-index: 10;}*/
 
 
             /******BACKGROUNDS*******/
+            .lighter-background{background-color:rgba(255,255,255,0.2)}
             .red-bg{background-color: red;}
             .black-bg{background-color: rgba(0,0,0,0.5);}
             .indigo{color: indigo;}
@@ -798,12 +738,28 @@ z-index: 10;}*/
             .navy{background-color: rgb(0,0,31);}
             .dark-red{background-color:rgb(55, 0, 0);}
             .lime-cyan{background: linear-gradient(to right, (limegreen, cyan))}
-            .home-main-color{color: #071C35;}
+            .home-main-color{color: rgb(40, 70, 96);}
+            .home-main-bg{background-color:rgb(40, 70, 96);}
+            .home-secondary-color{color: #525252; font-family: 'Alegreya Sans SC'; letter-spacing: 1.5px; font-weight: bold;}
+             .text-secondary-color-small{ color:  #525252;}
+            .home-gold-color{color: rgb(207,181,59); font-weight: bold; font-variant: small-caps; font-family: 'Alegreya Sans SC'; letter-spacing: 0.7px;}
             a {text-decoration: none;}
             a:hover{text-decoration: none;}
             .candidate{background-color:rgb(40, 70, 96);}
+            .titles-edit{font-size: 28px; }
+            .custom-card-footer{background-color: rgba(0,0,0,0.67);}
+            .left-10{position: relative; left: 2.5rem;}
+            .carousel-item .card-title{text-align: center;}
+            @media(max-width: 500px){
+              .titles-edit{  font-size: 21px;}
+            }
 
          /********************BACKGROUNDS***********************/
+
+
+
+         /***************************FONT SIZES*********************/
+         .medium-font-size{font-size: 24px;}
 
 
          /*********************FONTS****************************/
@@ -823,6 +779,15 @@ z-index: 10;}*/
                          /* font-family: "Muli-Bold";*/
         /*********************FONTS****************************/
 
+         /*TIPPY CUSTOMIZATION*/
+      
+      .tippy-list{background-color: white; padding: 15px; cursor: pointer; list-style-type: initial;}
+      .tippy-list .tippy-link{color: rgb(40, 70, 96); text-transform: capitalize; cursor: pointer; font-size: 21px;}
+      .tippy-list-item{margin-bottom: 7px;}
+      .tippy-list .tippy-link:hover{text-decoration: underline; }
+      
+      /*TIPPY CUSTOMIZATION*/
+
          .form-control {
           border: 1px solid #ccc;
           display: block;
@@ -838,15 +803,47 @@ z-index: 10;}*/
 
 
             .the-after-class-perm::after{
-
               content:"";
               display: inline-block;
-              height: 0.5em;
+              height: 25px;
+              position: absolute;
+              left: 0;
+              bottom: 0;
               vertical-align: bottom;
               width: 8%;
-              margin-right: -20%;
-              margin-left: 10px;
-              border-bottom: 1px solid #5b6770;
+              border-bottom: 5px solid rgb(40, 70, 96);
             }
 
+            .the-after-class::after{
+              content:"";
+              display: inline-block;
+              height: 25px;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              vertical-align: bottom;
+              width: 18.5%;
+              border-bottom: 5px solid rgb(40, 70, 96);
+            }
+
+            @media(max-width:992px){
+              .the-after-class-perm::after{width: 10%;}
+            }
+
+            @media(max-width:768px){
+              .the-after-class-perm::after{width: 12%;}
+            }
+
+
+            @media(max-width:450px){
+              .the-after-class::after{width: 22.5%;}
+              .the-after-class-perm::after{width: 15%;}
+            }
+
+
+
+        .test-bg{ background-color: #4c4177;
+           background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);}
+       .custom-card1 .btn {letter-spacing: 0.5px;
+      background-color: rgb(40, 70, 96);}
 

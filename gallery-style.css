@@ -1,3 +1,5 @@
+
+
 *{box-sizing: border-box;}
  html{margin: 0; padding: 0; height: auto; }
  #navigation{height: auto;}
@@ -95,18 +97,21 @@
      letter-spacing: 1.3px; 
      font-weight: 100;}
    .information-holder{ display: grid; }
-
    .image-holder{width: 70%; margin: 0 auto; margin-top: 2.2%;}
    .description {display: flex; align-items: center; flex-direction: column;  margin-top: 30px;  }
-   
    .the-container{color: aliceblue;}
-  
-
    #navigation{margin-bottom: 0;}
-
    .carousel-custom{width: 50%;}
    .carousel-caption{background-color: rgba(0,0,0,0.6);}
+
+   /*TIPPY CUSTOMIZATION*/
+
+   .tippy-list{background-color: white; padding: 15px; cursor: pointer;}
+   .tippy-list .tippy-link{color: rgb(40, 70, 96); text-transform: capitalize; cursor: pointer; font-size: 21px;}
+   .tippy-list-item{margin-bottom: 7px;}
+   .tippy-list .tippy-link:hover{text-decoration: underline; }
+  
+
    
-
-
+  /*TIPPY CUSTOMIZATION*/
    

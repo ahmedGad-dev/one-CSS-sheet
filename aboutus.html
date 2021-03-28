@@ -7,6 +7,12 @@
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet"> 
             <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+            <!--TIPPY LINKS TOOLTIPS -->
+            <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+            <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward.css"/>
+            <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css"/>
+            <link rel="stylesheet" href="https://unpkg.com/tippy.js@6tippy.js/dist/tippy.css">
+            <!--TIPPY LINKS TOOLTIPS -->
             <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="styles.css">         
             <link rel="stylesheet" href="gallery-style.css">
@@ -24,8 +30,8 @@
 
 
     
-  <section id="home-nav">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark "  id="nav-main">
+  <section id="home-nav" class="mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark candidate "  id="nav-main">
       <div class="container-fluid">  
 
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,51 +56,49 @@
                         <li><a class="dropdown-item" href="contactus.html"><span class="custom-span">Contact Us</span></a></li>
                     </ul>
                 </li>
-
-
-                <!--
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Projects</a>
-                  </li>
-                -->
-
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                   Services
-                      </a>
-                      <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Appartments</a></li>
-                          <li><a class="dropdown-item" href="#">Duplexes</a></li>              
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Mall Shops</a></li>
-                      </ul>
-                  </li>
+         
                   <li class="nav-item">
                       <a class="nav-link active"  area-current="page" href="aboutus.html" tabindex="-1" >About us</a>
                   </li>
 
                   <li class="nav-item">
                     <a class="nav-link" href="contactus.html" tabindex="-1" > Contact </a>
-                </li>
+                 </li>
 
-                  
+               
+                 <li class="nav-item">
+                    <button type="button" class=" nav-link tippy-button btn btn-outline-secondary px-3 text-white" >
+                        Services
+                    </button>
+                 </li>
               </ul>
+             
               <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-primary" type="submit">Search</button>
+                  <button class="btn btn-outline-secondary text-white p-2 px-3" type="submit">Search</button>
               </form>
          </div>
       </div>    
   </nav>
 </section>
 
-      
+<div id="template" tabindex="0" style="display: none;">
+    <ul class="tippy-list">
+        <li class="tippy-list-item"><a class="tippy-link" href="alba.html#appartements-cards">Alba Appartements</a></li>
+        <li class="tippy-list-item"><a class="tippy-link" href="alba.html">Alba Duplexes</a></li>
+        <li class="tippy-list-item"><a class="tippy-link">Maadi Appartements</a></li>
+        <li class="tippy-list-item"><a class="tippy-link">Maadi malls</a></li>
+        <li class="tippy-list-item"><a class="tippy-link">register</a></li>
+        <li class="tippy-list-item"><a class="tippy-link">Alba Appartements</a></li>
+    </ul>
+  </div>
         
-        <div class="container">  
+        <div class="container custom-about-container">  
+            <img src="images/logo/logo3.jpg">
 
         <div class="the-after-class-perm text-primary fs-4 text-danger mt-5">Our previous projects</div>
 
-        <div class="container container-fluid d-flex flex-column flex-md-row my-3 p-6 justify-center align-items-center ">
+        <div class="container container-fluid d-flex flex-column flex-md-row my-3 p-6 justify-content-center align-items-center ">
             <div class="inner1 col-8 col-md-3 mb-5 mx-5">
                 <div class="card" >
                     <img src="Images/favicon.png" class="card-img-top" alt="...">
@@ -122,44 +126,11 @@
                     </div>
                   </div>
             </div>
-
         </div>
-
     </div>
      
-           <!--
-       
-            <div class="about-inner-content">       
-                    <div class="previous-projects-inner">   
-                        <h2> Our Previous Work</h2>                
-                                <div class="polaroid">
-                                        <img src="Images/favicon.png" alt="5 Terre" style="width:100%">
-                                        <div class="image-card-description">
-                                           <p>Maadi Gardens</p>
-                                        </div>
-                                </div>
-                                    
-                                <div class="polaroid">
-                                        <img src="Images/alba-logo.png" alt="Norther Lights" style="width:100%">
-                                        <div class="image-card-description">
-                                           <p>Alba El-Shrouk</p>
-                                        </div>
-                                </div>
-
-                                <div class="polaroid">
-                                    <img src="Images/joulz-logo.jpg" alt="Norther Lights" style="width:100%">
-                                    <div class="image-card-description">
-                                       <p>Joulz</p>
-                                    </div>
-                               </div>
-
-                    </div>
-            </div>   
-
--->
-
-
-              
+          
+      
  <section class="managers-board mb-24 container">
 
                     <div class="the-after-class-perm text-primary fs-4 text-danger my-5">Our Mangers leaderboard</div>
@@ -241,7 +212,7 @@
 
 <!--
 
-    <div class="container d-flex justify-center p-6">
+    <div class="container d-flex justify-content-center p-6">
         <button type="button" class="btn btn-primary position-relative me-5">
             Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
           </button>
@@ -274,10 +245,11 @@
                   </div>
                         <!-- End social media icons -->
 
-                     <div class="middle">        
-                         Call Us <br> 16385   
-                         <i class="fa fa-phone" style="font-size: 24px;"></i>
-                    </div>
+                        <div class="middle d-none d-lg-flex">
+                            Call Us <br> 16385  
+                           <i class="fa fa-phone fa-position" style="font-size: 34px;"></i>
+                        </div>
+              
 
                         <div class="footer-links">
                             <ul>
@@ -298,7 +270,17 @@
               </footer>
               <!-- End of footer-->
               <script src="bootstrap/js/bootstrap.min.js"></script>
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  
+                     <!--TIPPY LINKS TOOLTIPS -->
+              <script src="https://unpkg.com/@popperjs/core@2"></script>
+              <script src="https://unpkg.com/tippy.js@6"></script>   
+                      <!--TIPPY LINKS TOOLTIPS -->   
+              <script src="tippy-tools.js"></script> 
+              <script>
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                  return new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+            </script> 
       
   </body>
 </html>

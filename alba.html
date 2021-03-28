@@ -9,9 +9,15 @@
     <link rel="canonical" href="http://example.com/ is the main webpage"/>
     <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+     <!--TIPPY LINKS TOOLTIPS -->
+     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward.css"/>
+     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css"/>
+     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6tippy.js/dist/tippy.css">
+     <!--TIPPY LINKS TOOLTIPS --> 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
+
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="maadi-gardens-stylings.css">
@@ -28,9 +34,8 @@
 
     <!-- RESPONISVE NAV BAR WITH SEARCH BUTTON-->
     <section id="home-nav">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark "  id="nav-main">
+      <nav class="navbar navbar-expand-lg navbar-dark candidate"  id="nav-main">
         <div class="container-fluid">  
-  
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,60 +44,51 @@
                     <li class="nav-item">
                         <a class="nav-link " href="index.html">Home</a>
                     </li>
-  
-  
+
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle active " area-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                   Projects
-                      </a>
+                                   Projects </a>
                       <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item" href="alba.html">Alba El-Shrouk</a></li>
-                          <li><a class="dropdown-item" href="maadigardens.html">Maadi Gardens</a></li>
-                          
+                          <li><a class="dropdown-item" href="maadigardens.html">Maadi Gardens</a></li>                 
                           <li><hr class="dropdown-divider"></li>
                           <li><a class="dropdown-item" href="contactus.html"><span class="custom-span">Contact Us</span></a></li>
                       </ul>
-                  </li>
+                   </li>
   
-  
-                  <!--
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                  -->
-  
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                     Services
-                        </a>
-                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Appartments</a></li>
-                            <li><a class="dropdown-item" href="#">Duplexes</a></li>              
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Mall Shops</a></li>
-                        </ul>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link"  href="aboutus.html" tabindex="-1" >About us</a>
                     </li>
 
                     <li class="nav-item">
                       <a class="nav-link"  href="contactus.html" tabindex="-1" >Contact</a>
-                  </li>
+                   </li>
 
-  
-                    
+                    <li class="nav-item">
+                      <button type="button" class=" nav-link tippy-button btn btn-outline-secondary text-white px-3" >
+                          Services
+                      </button>
+                  </li>             
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                    <button class="btn btn-outline-secondary text-white" type="submit">Search</button>
                 </form>
            </div>
         </div>    
     </nav>
   </section>
   
-
+  <div id="template" tabindex="0" style="display: none;">
+    <ul class="tippy-list">
+        <li class="tippy-list-item"><a class="tippy-link" href="alba.html#appartements-cards">Alba Appartements</a></li>
+        <li class="tippy-list-item"><a class="tippy-link" href="alba.html">Alba Duplexes</a></li>
+        <li class="tippy-list-item"><a class="tippy-link">Maadi Appartements</a></li>
+        <li class="tippy-list-item"><a class="tippy-link">Maadi malls</a></li>
+        <li class="tippy-list-item"><a class="tippy-link">register</a></li>
+        <li class="tippy-list-item"><a class="tippy-link">Alba Appartements</a></li>
+    </ul>
+  </div>
 <!--projects navigation bar-->
   
 
@@ -101,9 +97,9 @@
 
 
 
-<div class="container container-fluid mt-20">
+<div class="container container-fluid mt-5">
   <h2 class="display-4 home-main-color text-uppercase ">Alba boutique residence</h2>
-  <h2 class="display-6 text-gray text-uppercase the-after-class-perm home-main-color fw-bold fs-6">Enjoy the luxury life</h2>
+  <h2 class="display-6 text-gray text-uppercase home-secondary-color fw-bold fs-6">Enjoy the luxury life</h2>
   <div id="maadi-alba-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 100rem;">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#maadi-alba-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -230,15 +226,14 @@
 
 
 
+<div class="container mb-4">
+    <h2 class="paras-icons-title display-6 text-red home-main-color text-uppercase mt-5 mb-3">Alba residence properties</h2>
+    <div class="display-6 pb-2 position-relative home-gold-color left-10 medium-font-size the-after-class-perm "> Alba Duplexes</div>
+</div>
 
-<h2 class="paras-icons-title display-5 text-red my-5">Alba boutique residence properties</h2>
-
-<div class="display-6 the-after-class-perm text-uppercase mt-5 position-relative left-10 my-5"> ALba Functional Duplexes</div>
-
-
-<section id="duplexes-cards" class=" d-flex flex-column flex-lg-row ">
+<section id="duplexes-cards" class=" d-flex flex-column flex-lg-row justify-content-center align-items-center container bg-dark">
   <!--Alba Carousel-->
-  <div id="card-carousel-one" class="carousel slide col-12 col-lg-6 d-flex justify-content-center flex-row" data-bs-touch="false" data-bs-interval="false" data-bs-ride="carousel">
+  <div id="card-carousel-one" class="carousel slide col-12 col-lg-6 d-flex justify-content-center flex-row my-5" data-bs-touch="false" data-bs-interval="false" data-bs-ride="carousel">
     <!--CAROUSEL INNER-->
     <div class="carousel-inner">  
         <!--First Carousel-->
@@ -246,7 +241,7 @@
               <div class="container container-fluid d-flex flex-column justify-content-center align-items-center"> 
                     <div class="card mb-3 col-8 " >
                       <img src="Images/Alba/1.jpg" class="card-img" alt="...">
-                      <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                      <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center ">
                         <h5 class="card-title ">Card title</h5>                                     
                       </div>
                   </div>
@@ -257,7 +252,7 @@
             <div class="container container-fluid d-flex flex-column justify-content-center align-items-center"> 
                   <div class="card mb-3 col-8 " >
                     <img src="Images/Alba/2.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay">
+                    <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center ">
                       <h5 class="card-title">Card title</h5>                                
                     </div>
                 </div>
@@ -269,7 +264,7 @@
               <div class="container container-fluid d-flex flex-column justify-content-center align-items-center"> 
                     <div class="card mb-3 col-8 " >
                       <img src="Images/Alba/3.jpg" class="card-img" alt="...">
-                      <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                      <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center  ">
                         <h5 class="card-title ">Card title</h5>                                     
                       </div>
                   </div>
@@ -280,7 +275,7 @@
             <div class="container container-fluid d-flex flex-column justify-content-center align-items-center"> 
                   <div class="card mb-3 col-8 " >
                     <img src="Images/Alba/4.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                    <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center  ">
                       <h5 class="card-title ">Card title</h5>                                     
                     </div>
                 </div>
@@ -293,7 +288,7 @@
           <div class="container container-fluid d-flex flex-column justify-content-center align-items-center"> 
                 <div class="card mb-3 col-8 " >
                   <img src="Images/Alba/5.jpg" class="card-img" alt="...">
-                  <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                  <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center  ">
                     <h5 class="card-title ">Card title</h5>                                     
                   </div>
               </div>
@@ -305,7 +300,7 @@
         <div class="container container-fluid d-flex flex-column justify-content-center align-items-center"> 
               <div class="card mb-3 col-8 " >
                 <img src="Images/Alba/6.jpg" class="card-img" alt="...">
-                <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center">
                   <h5 class="card-title ">Card title</h5>                                     
                 </div>
             </div>
@@ -324,8 +319,8 @@
     </button>
   </div>
   
-  <div class="container container-fluid col-8 col-lg-6 d-flex align-items-center">
-    <div class="inner-content container card-descrebtion-content my-3">
+  <div class="container container-fluid col-12 col-md-10 col-lg-6 d-flex align-items-center">
+    <div class="inner-content container card-descrebtion-content my-3 text-white">
       Alba's Duplexes are cleverly designed to accommodate bigger families without compromising on functionality or privacy
       Dublex highlights:
       enhanced-privacy layout: reception area separated from living/sleeping quarters
@@ -337,19 +332,20 @@
     </section>
   
     <!--APPARTEMENTS CAROUSEL SECTION-->
-  
-    <div class="display-6 the-after-class-perm text-uppercase  position-relative left-10 mt-md-5"> Alba Appartements</div>
-    <section id="appartements-cards" class="mb-5 d-flex flex-column flex-lg-row my-10">
-    
+  <div class="container mb-4">
+    <div class="display-6 pb-2 position-relative left-10 mt-md-5 home-gold-color medium-font-size the-after-class-perm "> Alba Appartements</div>
+  </div>
+
+    <section id="appartements-cards" class="mb-5 d-flex flex-column flex-lg-row justify-content-center align-items-center container bg-dark">
       <!--Alba Carousel-->
-      <div id="card-carousel-two" class="carousel slide col-12 col-lg-6 d-flex justify-content-center flex-row" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false">
+      <div id="card-carousel-two" class="carousel slide col-12 col-lg-6 d-flex justify-content-center flex-row my-5" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false">
         <div class="carousel-inner">
           <!--First 2 cards m-->
                   <div class="carousel-item active">
                     <div class="container container-fluid d-flex flex-column justify-content-center align-items-center"> 
                           <div class="card mb-3 col-8 " >
                             <img src="Images/Alba/1.jpg" class="card-img" alt="...">
-                            <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                            <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center ">
                               <h5 class="card-title ">Card title</h5>                                     
                             </div>
                         </div>
@@ -361,7 +357,7 @@
                   <div class="container container-fluid d-flex flex-column justify-content-center align-items-center"> 
                         <div class="card mb-3 col-8 " >
                           <img src="Images/Alba/2.jpg" class="card-img" alt="...">
-                          <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                          <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center ">
                             <h5 class="card-title ">Card title</h5>                                     
                           </div>
                       </div>
@@ -374,7 +370,7 @@
               <div class="container container-fluid d-flex flex-column justify-content-center align-items-center"> 
                     <div class="card mb-3 col-8 " >
                        <img src="Images/Alba/3.jpg" class="card-img" alt="...">
-                       <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                       <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center ">
                         <h5 class="card-title ">Card title</h5>                                     
                       </div>
                    </div>
@@ -386,7 +382,7 @@
                     <div class="container container-fluid d-flex flex-column justify-content-center align-items-center"> 
                           <div class="card mb-3 col-8 " >
                              <img src="Images/Alba/4.jpg" class="card-img" alt="...">
-                             <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                             <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center ">
                               <h5 class="card-title ">Card title</h5>                                     
                             </div>
                          </div>
@@ -398,7 +394,7 @@
                       <div class="container container-fluid d-flex flex-column justify-content-center align-items-center"> 
                             <div class="card mb-3 col-8 " >
                               <img src="Images/Alba/5.jpg" class="card-img" alt="...">
-                              <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                              <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center  ">
                                 <h5 class="card-title ">Card title</h5>                                     
                               </div>
                           </div>
@@ -409,7 +405,7 @@
                     <div class="container container-fluid d-flex flex-column justify-content-center align-items-center"> 
                           <div class="card mb-3 col-8 " >
                             <img src="Images/Alba/6.jpg" class="card-img" alt="...">
-                            <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                            <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center  ">
                               <h5 class="card-title ">Card title</h5>                                     
                             </div>
                         </div>
@@ -427,35 +423,33 @@
         </button>
       </div>
       
-      <div class="container container-fluid col-8 col-lg-6 d-flex align-items-center mb-3 mb-lg-0  appartements-pargaraph">
-        <div class="inner-content container card-descrebtion-content my-3">
-        
+      <div class="container container-fluid col-12 col-md-10 col-lg-6 d-flex align-items-center mb-3 mb-lg-0  appartements-pargaraph">
+        <div class="inner-content container card-descrebtion-content my-3 text-white">   
           Appartements highlights:
           Sky Patio: communal roof area spanning connected buildings
           ground level units come with private gardens
           enhanced-privacy layout: reception area separated from living/sleeping quarters
           Unique design choices: 2-bedroom / 3-bedrooms apartements available, each with thier own modernized layouts
-      
-      
         </div>
       </div>
         <!--cards section-->
         </section>
   
             <!--PENTHOUSES CAROUSEL SECTION-->
-  
-        <div class="display-6 the-after-class-perm text-uppercase mt-5 position-relative left-10 my-5"> Alba penthouses</div>
-        <section id="penthouse-cards" class="mb-5 d-flex flex-column flex-lg-row my-10 ">
-    
+      <div class="container mb-4">
+        <div class="display-6 pb-2 mt-5 position-relative left-10 home-gold-color medium-font-size the-after-class-perm "> Alba Penthouses</div>
+      </div>
+      <!--PENTHOUSES SECTION-->
+        <section id="penthouse-cards" class="mb-5 d-flex flex-column flex-lg-row justify-content-center  align-items-center container bg-dark">
           <!--Alba Carousel-->
-          <div id="card-carousel-three" class="carousel slide col-12 col-lg-6 d-flex justify-content-center flex-row" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false">
+          <div id="card-carousel-three" class="carousel slide col-12 col-lg-6 d-flex justify-content-center flex-row my-5" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false">
             <div class="carousel-inner">
               <!--First card-->
               <div class="carousel-item active">
                  <div class="container container-fluid d-flex flex-column justify-content-center align-items-center"> 
                        <div class="card mb-3 col-8 " >
                           <img src="Images/Alba/1.jpg" class="card-img" alt="...">
-                          <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                          <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center  ">
                             <h5 class="card-title ">Card title</h5>                                     
                           </div>
                       </div>
@@ -466,7 +460,7 @@
                 <div class="container container-fluid d-flex flex-column justify-content-center align-items-center">                
                       <div class="card mb-3 col-8 " >
                          <img src="Images/Alba/2.jpg" class="card-img" alt="...">
-                         <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                         <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center ">
                           <h5 class="card-title ">Card title</h5>                                     
                         </div>
                      </div>
@@ -479,7 +473,7 @@
                 <div class="container container-fluid d-flex flex-column justify-content-center align-items-center"> 
                   <div class="card mb-3 col-8 " >
                      <img src="Images/Alba/3.jpg" class="card-img" alt="...">
-                     <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                     <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center ">
                       <h5 class="card-title ">Card title</h5>                                     
                     </div>
                  </div>
@@ -491,7 +485,7 @@
                   <!--First card-->   
                     <div class="card mb-3 col-8 " >
                         <img src="Images/Alba/4.jpg" class="card-img" alt="...">
-                        <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                        <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center  ">
                           <h5 class="card-title ">Card title</h5>                                     
                         </div>
                   </div>
@@ -503,7 +497,7 @@
                             <!--First card-->   
                            <div class="card mb-3 col-8 " >
                               <img src="Images/Alba/5.jpg" class="card-img" alt="...">
-                              <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                              <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center ">
                                 <h5 class="card-title ">Card title</h5>                                     
                               </div>
                           </div>
@@ -515,7 +509,7 @@
                       <!--First card-->   
                         <div class="card mb-3 col-8 " >
                             <img src="Images/Alba/6.jpg" class="card-img" alt="...">
-                            <div class="card-img-overlay d-none d-md-flex align-items-center justify-center ">
+                            <div class="card-img-overlay d-none d-md-flex align-items-center justify-content-center ">
                               <h5 class="card-title ">Card title</h5>                                     
                             </div>
                       </div>
@@ -533,8 +527,8 @@
             </button>
           </div>
           
-          <div class="container container-fluid col-8 col-lg-4 d-flex align-items-center">
-            <div class="inner-content container card-descrebtion-content my-3">
+          <div class="container container-fluid col-12 col-md-10 col-lg-6 d-flex align-items-center">
+            <div class="inner-content container card-descrebtion-content my-3 text-white">
             
               Alba's Duplexes are cleverly designed to accommodate bigger families without compromising on functionality or privacy
               Dublex highlights:
@@ -550,78 +544,84 @@
    <!--LAST XARDS SECTION-->       
     
 
-
-
-
-
-
-
 <div class="container container-fluid">
-      <div class="map-div container d-flex justify-center ">
+      <div class="map-div container d-flex justify-content-center ">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d887116.376022774!2d30.879743276052714!3d29.711116065169897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457f725183ee5a5%3A0x3df0deff87c37efb!2z2YPZhdio2YjZhtivINin2YTYqNinINin2YTYtNix2YjZgg!5e0!3m2!1sen!2seg!4v1615118826463!5m2!1sen!2seg" 
-        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
 
       
-<h2 class="paras-icons-title display-2 text-red my-5">About The Project</h2>
+<h2 class="display-6 text-uppercase home-main-color my-2">About The Project</h2>
 
-
+        <!-- SERVICES LOCATION AND SECURITY-->
       <div class="albums-container25 ">
-          <div class="paras-icons-container"> 
-            <div class="paras-icons-inner">   
-                <div> 
-                    <h3 class="display-6 mb-3  m-3 ">Services</h3>  
-                    <p class="text-secondary paragraph-edits">Maadi gardens compound contains all kinds of services, it falls in a very active area on the ring road near 
+        <!-- SERVICES CONTAINER-->
+          <div class="container mb-2"> 
+            <div class="d-flex justify-content-center align-items-center ">   
+                <div class="d-flex justify-content-center align-items-center flex-column">              
+                    <div class="display-6 d-flex flex-row align-items-center justify-content-center mb-3 m-3 home-gold-color d-flex align-self-start ">
+                        <h3 class="me-3">Services</h3>
+                        <img  src="images/icons8-services-128.png" style="width: 50px; height: 50px;"/>
+                    </div> 
+                    <p class="text-secondary col-12 col-md-8 ">Maadi gardens compound contains all kinds of services, it falls in a very active area on the ring road near 
                       El-Kattamya shooting club, El-maadi club, Yackht club (the investements area) 1KM far away from carefour El-maadi and schools collection.
-                      Very close to modern academy and the modern british school</p>
-                  </div>
+                      Very close to modern academy and the modern british school
+                    </p>
+                </div>
             </div>   
-                <div class="images-container">
-                    <img  src="images/icons8-services-128.png"/>
-               </div>
           </div>
 
-          <div class="paras-icons-container location-container">
-                <div class="paras-icons-inner">    
-                  <div>
-                    <h3 class="display-6 mb-3  m-3">Location</h3>
-                      <p class="text-secondary paragraph-edits">   Maadi Gardens epic location allows you to reach all of the most important areas around cairo and Giza in less than 30 minutes either direction
+
+       <!-- LOCATION CONTAINER-->
+          <div class="container my-2">
+                <div class="d-flex justify-content-center align-items-center ">    
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <div class = "display-6 d-flex flex-row align-items-center justify-content-center mb-3 m-3 home-gold-color d-flex align-self-start">
+                      <h3 class="me-3">Location</h3>
+                      <img  src="images/icons8-location-96.png" style="width: 50px; height: 50px;"/>
+                    </div>
+                      <p class="text-secondary col-12 col-md-8">   Maadi Gardens epic location allows you to reach all of the most important areas around cairo and Giza in less than 30 minutes either direction
                           where the first direction is (Maadi, Mohandseen, El-Haram, and 6th of october) and the other direction of
-                          (Heliopolis , The airport, Nasr City and 5th Settelement)</p>
+                          (Heliopolis , The airport, Nasr City and 5th Settelement)
+                      </p>
                   </div>
-                    <div class="images-container">
-                      <img class="img-container-img" src="Images/icons8-location-96.png" />
-                    </div>
+                    
               </div>
           </div>
 
-
-            <div class="paras-icons-container">
-              <div class="paras-icons-inner">  
-                  <div>
-                     <h3 class="display-6 mb-3  m-3">Security</h3>
-                     <p class="text-secondary paragraph-edits"> Maadi Gardens was built on area of 20 acres, 84000 meters in order to build a full services Residence compound where all of 
-                      the cozy life styles are available in addition to that it's supported by a group of different services including electronic gates equipped with security cameras
-                      also security guards on the gates and a guard for every building.</p> 
-                   </div>
-              </div>
-                    <div class="images-container">
-                        <img class="" src="images/icons8-protect-96.png" style="width: 128px; height: 128px;"/>                 
+            <!--SECURITY CONTAINER-->
+            <div class="container my-2">
+              <div class="d-flex justify-content-center align-items-center ">  
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <div class = "display-6 d-flex flex-row align-items-center justify-content-center mb-3 m-3 home-gold-color d-flex align-self-start">
+                      <h3 class="me-3 ">Security</h3>
+                      <img class="" src="images/icons8-protect-96.png" style="width: 50px; height: 50px;"/> 
                     </div>
+                      <p class="text-secondary col-12 col-md-8"> Maadi Gardens was built on area of 20 acres, 84000 meters in order to build a full services Residence compound where all of 
+                        the cozy life styles are available in addition to that it's supported by a group of different services including electronic gates equipped with security cameras
+                        also security guards on the gates and a guard for every building.
+                      </p> 
+                  </div>
+              </div>
+                 
             </div>
       </div>
 </div>
 
 
   <!-- starting Registration form -->
-  <div class="container container-fluid mt-12 mb-12 d-flex justify-center">
-    <div class="trial maadi-alba-trial"> <span class="squared">0%</span> down payments up to <span class="circle">10</span> years installments 
-      <div class="btns-holder">
-        <a href="contactus.html"> <button class="golden-btns golden-btns-alba">contact us </button></a>
-        <a href="tel: 16385"> <button class="golden-btns golden-btns-alba">call <img src="https://img.icons8.com/metro/26/000000/phone.png"></button></a>
+  <div class="container container-fluid my-2 mb-5 d-flex justify-content-center col-10 col-md-8 col-lg-6 trial border border-warning">
+    <div class="fs-5 fs-md-4 fs-lg-3"> 
+      <p class="lh-lg">
+          <span class="squared p-1 p-md-2 p-lg-3">0%</span> down payments up to <span class="circle p-1 p-md-2 p-lg-3">10</span> years installments 
+     </p>
+      <div class=" col-12 d-flex flex-row justify-content-around">
+              <a href="contactus.html"> <button class="golden-btns text-uppercase">contact us </button></a>
+              <a href="tel: 16385"> <button class="golden-btns text-uppercase">call  </button></a> 
        </div>
     </div>
   </div>
+  
 
 
  
@@ -644,16 +644,15 @@
              <a> <img src="https://img.icons8.com/nolan/64/whatsapp.png" style="width: 40px; height:40px;" title="WhatsApp"/> </a>
       </div>
             <!-- End social media icons -->
-         <div class="middle">
-             
-             Call Us <br> 16385   
-             <i class="fa fa-phone" style="font-size: 24px;"></i>
-        </div>
+            <div class="middle d-none d-lg-flex">
+              Call Us <br> 16385  
+             <i class="fa fa-phone fa-position" style="font-size: 34px;"></i>
+          </div>
 
             <div class="footer-links">
                 <ul>
-                    <li><a><span>Home</span></a></li>
-                    <li><a><span>Alba</span></a></li>
+                    <li><a href="index.html"><span>Home</span></a></li>
+                    <li><a href="alba.hml"><span>Alba</span></a></li>
                     <li><a><span>Maadi gardens</span></a></li>                          
                     <li><a><span>Contact us</span></a></li>
                     <li><a><span>FAQ</span></a></li>
@@ -673,19 +672,19 @@
 
     
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  
-     <script src="Bootstrap/js/bootstrap.min.js"></script>
+      <script src="Bootstrap/js/bootstrap.min.js"></script>
 
-   <script>
-
-      function myFunction(imgs) {
-          var expandImg = document.getElementById("expandedImg");
-          var imgText = document.getElementById("imgtext");
-          expandImg.src = imgs.src;
-          imgText.innerHTML = imgs.alt;
-          expandImg.parentElement.style.display = "block";
-        }
-      
-    </script>
+          <!--TIPPY LINKS TOOLTIPS -->
+          <script src="https://unpkg.com/@popperjs/core@2"></script>
+          <script src="https://unpkg.com/tippy.js@6"></script>   
+                  <!--TIPPY LINKS TOOLTIPS -->   
+          <script src="tippy-tools.js"></script> 
+          <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+              return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script> 
      
      
 </body>

@@ -12,7 +12,13 @@
     <link rel="canonical" href="http://example.com/ is the main webpage"/>
     <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet"> 
+     <!--TIPPY LINKS TOOLTIPS -->
+     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward.css"/>
+     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css"/>
+     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6tippy.js/dist/tippy.css">
+     <!--TIPPY LINKS TOOLTIPS --> 
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
     <link rel="icon" type="image/png" href="logo-img.jpeg">
     <link rel="stylesheet" href="style.css">
@@ -38,7 +44,7 @@
 
 
    <header>
-    <div class="container container-fluid d-flex flex-column flex-lg-row justify-center justify-content-lg-between align-items-center mt-5 p-3">
+    <div class="container container-fluid d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center mt-5 p-3">
       <!--HOME LOGO-->
        <div class="logo-holder col-12 col-lg-6 my-2">
          <img src="images/logo/logo1.jpg">
@@ -46,7 +52,7 @@
         <!--OTHER CONTENT HOLDER-->
         <div class="container content-holder col-12 col-lg-6 justify-between d-flex flex-column align-content-center">
           <!--CALL US AND WHATSAPP HOLDER-->
-          <div class="d-flex flex-row justify-center my-2">
+          <div class="d-flex flex-row justify-content-center my-2">
                 <div class=" call-us-header ">
                       Call Us &nbsp; <a href="tel:16385"> 16385   <i class="fa fa-phone transfrom-rotate" style="font-size: 16px;"></i>   </a> 
                 </div>
@@ -116,23 +122,9 @@
                     </li>
 
 
-                    <!--
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Projects</a>
-                      </li>
-                    -->
+                   
 
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                       Services
-                          </a>
-                          <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="alba.html#cards">Appartments</a></li>
-                              <li><a class="dropdown-item" href="#">Duplexes</a></li>              
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Mall Shops</a></li>
-                          </ul>
-                      </li>
+                      
                       <li class="nav-item">
                           <a class="nav-link " href="aboutus.html" tabindex="-1" >About us</a>
                       </li>
@@ -141,17 +133,32 @@
                         <a class="nav-link "  href="contactus.html" tabindex="-1" >Contact</a>
                     </li>
 
-
+                    
+                    <li class="nav-item">
+                      <button type="button" class=" nav-link tippy-button btn btn-outline-secondary text-white px-3" >
+                          Services
+                      </button>
+                   </li>
                   </ul>
                   <form class="d-flex">
                       <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-primary " type="submit">Search</button>
+                      <button class="btn btn-outline-secondary text-white " type="submit">Search</button>
                   </form>
              </div>
           </div>    
       </nav>
   </section>
 
+  <div id="template" tabindex="0" style="display: none;">
+    <ul class="tippy-list">
+        <li class="tippy-list-item"><a class="tippy-link" href="alba.html#appartements-cards">Alba Appartements</a></li>
+        <li class="tippy-list-item"><a class="tippy-link" href="alba.html">Alba Duplexes</a></li>
+        <li class="tippy-list-item"><a class="tippy-link">Maadi Appartements</a></li>
+        <li class="tippy-list-item"><a class="tippy-link">Maadi malls</a></li>
+        <li class="tippy-list-item"><a class="tippy-link">register</a></li>
+        <li class="tippy-list-item"><a class="tippy-link">Alba Appartements</a></li>
+    </ul>
+  </div>
 
 
   <section id="main-carousel">
@@ -205,19 +212,19 @@
           <section class="carousels-section mt-5 mb-10">
             <div class="container container-fluid">
 
-              <h1 class="text-red text-center pt-5 our-pro-title display-1">Our Projects</h1>
+              <h1 class="home-main-color text-center pt-5 our-pro-title display-1 text-uppercase">Our Projects</h1>
           <!--Cards and Carousels container-->
-          <div class="col-12 col-md-6 the-after-class text-uppercase display-6  home-main-color fw-bold mt-5 ">Alba-Elshrouk</div>
-               <div class="container d-flex align-items-center justify-content-around  mt-5 mt-lg-0 car-container">
+          <div class="col-12 col-md-6 the-after-class d-inline-block position-relative text-uppercase fw-bold mt-5 home-gold-color titles-edit pb-1">Alba-Elshrouk</div>
+               <div class="container d-flex align-items-center justify-content-around car-container bg-dark mt-4">
            <!--CARD-->
 
-            <div class="card text-white mb-3 custom-card1" style="">
+            <div class="card text-white mb-3 custom-card1 mt-4">
               <div class="card-header fs-4 ">Alba-Elshrouk Gallery</div>
               <div class="card-body">
                 <h5 class="card-title fs-4 mb-3 text-center">Alba</h5>
                 <p class="card-text fs-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                    Cupiditate dolore eos facere qui, earum quaerat odio reiciendis, maxime quidem fugiat iste incidunt sapiente corporis soluta.</p>
-                   <div class="btn btn-primary text-capitalize d-flex justify-center mt-4"> <a class="text-white" href="alba.html"> Click here for more details </div></a>
+                   <div class="btn btn-secondary text-capitalize d-flex justify-content-center mt-4"> <a class="text-white" href="alba.html"> Click here for more details </div></a>
               </div>
             </div>
 
@@ -269,20 +276,20 @@
                  </div>
              </div>
 
-             <div class="col-12 col-md-6 the-after-class text-uppercase display-6 home-main-color fw-bold mt-5">Maadi Gardens</div>
+             <div class="col-12 col-md-6 the-after-class text-uppercase fw-bold mt-5 d-inline-block position-relative titles-edit home-gold-color pb-1">Maadi Gardens</div>
 
-             <div class="project-carosels">
+             <div class="project-carosels bg-dark mt-4">
                <!--Cards and Carousels container-->
-                <div class="container d-flex align-items-center justify-content-around mt-5 mt-lg-0 car-container">
+                <div class="container d-flex align-items-center justify-content-around mt-4 car-container">
                      <!--CARD-->
                <div class="card-container">
-                   <div class="card text-white mb-3 custom-card1" style="">
+                   <div class="card text-white mb-3 custom-card1">
                         <div class="card-header fs-4" >Maadi Gardens Gallery</div>
                         <div class="card-body">
                             <h5 class="card-title fs-4 mb-3 text-center">Maadi Gardens</h5>
                             <p class="card-text fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, 
                                 architecto pariatur. Officia facere provident, earum corrupti eaque quis eveniet dolorum impedit</p>
-                                <div class="btn btn-primary text-capitalize d-flex justify-center mt-4"> <a class="text-white" href="maadigardens.html"> Click here for more details </div></a>
+                                <div class="btn btn-secondary text-capitalize d-flex justify-content-center mt-4"> <a class="text-white" href="maadigardens.html"> Click here for more details </div></a>
                        </div>
                   </div>
               </div>
@@ -339,33 +346,47 @@
           </div>
       </section>
 <!--END CARSOUELS SECTION-->
- 
 
+ <section id="alba-sky">
+    <div class="container d-flex flex-row justify-content-start col-12 my-5">
+      <div class="inner-content p-3 col-md-6 my-5">
+        <span class="block block-span text-white text-uppercase fs-4">About Us</span>
+      <p class="fs-6">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad corporis quia, quis eligendi officiis quos a nobis totam 
+        veritatis optio perferendis explicabo praesentium impedit eos ea eveniet consequatur. Est provident velit sapiente error non a et ut doloribus,
+        dolorem sit quibusdam itaque, temporibus recusandae consequuntur autem quaerat dolore iusto molestiae!
+      </p>
+
+      <p class="fs-6">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad corporis quia, quis eligendi officiis quos a nobis totam 
+        veritatis optio perferendis explicabo praesentium impedit eos ea eveniet consequatur. Est provident velit sapiente error non a et ut doloribus,
+        dolorem sit quibusdam itaque, temporibus recusandae consequuntur autem quaerat dolore iusto molestiae!
+      </p>
+  <div class="d-flex flex-column align-items-start justify-content-start">
+      <h5 class="fw-bold">Follow us on social media</h5>
+      <div class="btn-group">
+        <div class="btn btn-outline-secondary btn-sm me-3 rounded"> Facebook</div>
+        <div class="btn btn-outline-secondary me-3 btn-sm rounded"> Instagram</div>
+        <div class="btn btn-outline-secondary me-3 btn-sm rounded"> Twitter</div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </section>
 
 
 
 
     <!--INFORMATION, GOALS AND DESCRIPTIONS -->
-    <div class="albums-container22 container container-fluid mb-5">
-      <div class="container container-fluid d-flex justify-content-center col-md-12">
-          <div class="inner-content text-3xl pb-3 "><span class="block block-span">About Us</span>
-          <p class="text-secondary">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad corporis quia, quis eligendi officiis quos a nobis totam 
-            veritatis optio perferendis explicabo praesentium impedit eos ea eveniet consequatur. Est provident velit sapiente error non a et ut doloribus,
-            dolorem sit quibusdam itaque, temporibus recusandae consequuntur autem quaerat dolore iusto molestiae!</p>
-          </div>
-        </div>
-
-        <div class="display-2 text-center mt-5 mb-5 our-services-title text-red">Our Services</div>
-            <div class="gallery-div"> 
-              
-
+    <div class="albums-container22 container container-fluid mb-5 ">
+        <div class="display-1 text-center mt-5 mb-5 home-secondary-color text-uppercase">Our Services</div>
+        <!--3 HORIZONTAL SERVICES-->
+            <div class="gallery-div container "> 
               <div class="container-fluid col-lg-4 col-md-8 mb-5  d-flex justify-content-center">
                 <div class="card justify-content-center align-items-center" style="max-width: 24rem;">                   
                   <img src="Images/icons8-clock-256(1).png" style="max-width: 140px; max-height: 140px;" class="card-img-top" alt="..."/>
                   <div class="card-body">
-                    <h5 class="card-title text-capitalize">on time deliverables</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>                   
+                    <h5 class="card-title text-capitalize home-gold-color">on time deliverables</h5>
+                    <p class="card-text home-main-color">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    
                   </div>
                 </div>
               </div>
@@ -374,9 +395,9 @@
                 <div class="card justify-content-center align-items-center" style="max-width: 24rem;">                   
                    <img src="Images/icons8-privacy-96.png" style="max-width: 140px; max-height: 140px;" class="card-img-top" alt="..."/>
                     <div class="card-body">
-                        <h5 class="card-title text-capitalize">high privacy</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>                   
+                        <h5 class="card-title text-capitalize home-gold-color">high privacy</h5>
+                        <p class="card-text home-main-color">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        
                     </div>
                 </div>
              </div>
@@ -386,9 +407,9 @@
                   <div class="card justify-content-center align-items-center" style="max-width: 24rem;">                   
                     <img src="Images/icons8-home-256.png" style="max-width: 140px; max-height: 140px;" class="card-img-top" alt="..."/>
                     <div class="card-body">
-                        <h5 class="card-title text-capitalize">modern concepts</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>                   
+                        <h5 class="card-title text-capitalize home-gold-color">modern concepts</h5>
+                        <p class="card-text home-main-color">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                       
                     </div>
                 </div>       
              </div>      
@@ -398,25 +419,16 @@
 
 
 
-
-
-
-
-
     <div class="albums-container22 container container-fluid mb-5">
-      
-
-       
-            <div class="gallery-div"> 
-              
-
+        <!--3 HORIZONTAL SERVICES-->
+            <div class="gallery-div container"> 
               <div class="container-fluid col-lg-4 col-md-8 mb-5  d-flex justify-content-center">
                 <div class="card justify-content-center align-items-center" style="max-width: 24rem;">                   
                   <img src="Images/icons8-location-96.png" style="max-width: 140px; max-height: 140px;" class="card-img-top" alt="..."/>
                   <div class="card-body">
-                    <h5 class="card-title text-capitalize">best locations</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>                   
+                    <h5 class="card-title text-capitalize home-gold-color">best locations</h5>
+                    <p class="card-text home-main-color">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  
                   </div>
                 </div>
               </div>
@@ -425,9 +437,9 @@
                 <div class="card justify-content-center align-items-center" style="max-width: 24rem;">                   
                    <img src="Images/icons8-expand-96.png" style="max-width: 140px; max-height: 140px;" class="card-img-top" alt="..."/>
                     <div class="card-body">
-                        <h5 class="card-title text-capitalize">areas fits all needs</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>                   
+                        <h5 class="card-title text-capitalize home-gold-color">areas fits all needs</h5>
+                        <p class="card-text home-main-color">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                           
                     </div>
                 </div>
              </div>
@@ -437,78 +449,88 @@
                   <div class="card justify-content-center align-items-center" style="max-width: 24rem;">                   
                     <img src="Images/icons8-coins-96.png" style="max-width: 140px; max-height: 140px;" class="card-img-top" alt="..."/>
                     <div class="card-body">
-                        <h5 class="card-title text-capitalize"> ability for installments</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>                   
+                        <h5 class="card-title text-capitalize home-gold-color"> ability for installments</h5>
+                        <p class="card-text home-main-color">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                         
                     </div>
                 </div>       
              </div>      
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-      <!--mission vision and goals -->
-    <div class="mission-vision-goals-container"> <!--THE CONTAINER-->
-      <div class="our-mission-container container container-fluid ">
-          <img src="Images/alba/1.jpg" class="mini-image"> 
-          <div class="our-mission-inner custom-mission-inner container container-fluid col-md-4">
-            <h2 class="text-center">OUR MISSION</h2>
-            <p>Lorem ipsum, doloic! Quod dolore a ad ut quas odio, enda quidem unduatur luptatem eveniet magni asperiores 
-               repudiandae delectus atque!</p>
-         </div>    
-      </div>
-
-
-    <div class="our-mission-container container container-fluid">
-          <img src="Images/alba/2.jpg" class="mini-image">
-          <div class="our-mission-inner container container-fluid col-md-4 custom-mission-inner2">
-              <h2 class="text-center">OUR VISION</h2>
-              <p>Lorem ipsum, doloic! Quod dolore a ad ut quas odio, enda quidem unduatur voluptatem eveniet magni asperiores 
-                repudiandae delectus atque!</p>
-          </div>  
-      </div>
-
-
-
-      <div class="our-mission-container our-goals-container container container-fluid ">
-        <img src="images/alba/7.jpg" class="mini-image">
-          <div class="our-mission-inner container container-fluid col-md-4 custom-mission-inner3">
-            <h2 class="text-center">OUR GOALS</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur aaerat laboriosam blanditiis laudantium, eaque accusantium assumod dolore a ad ut quas odio,
-                minus recusandae architecto molliptatibus</p>
-         </div>  
-                       
-      </div>
-    </div>     
-
-
-<!--INFORMATION, GOALS AND DESCRIPTIONS -->
 </main>
 
-<div class="registeration container container-fluid col-8">
-   <p> please fill in the registeration form below to get all of the updates for our projects</p>
-   <img class="down-arrow" src="mini-images/down-arrow.png" alt="">
+
+  <section id="mission-vision-goals" class="container my-5">
+    <!--MISSION, VISION, GOALS CARD GROUP CONTAINER-->
+    <div class="card-group row d-flex justify-content-center">
+      <!--FIRST CARD-->
+        <div class="col col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="Images/cards/image-card.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title home-secondary-color text-uppercase text-center ">Our Mission</h5>
+              <p class="card-text home-main-color">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+
+            <div class="card-footer">
+              <p class="card-text text-capitalize"><small class="text-muted"><a href="aboutus.html" class="fs-6 text-uppercase float-end" role="button">learn more about us</a></small></p>
+            </div>
+          </div>
+
+          <div class="card text-white home-main-bg my-4" style="max-width: 27rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Dark card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+
+    <div class="col col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="Images/cards/shot 8.jpg" class="" alt="...">
+            <div class="card-body">
+              <h5 class="card-title home-secondary-color text-uppercase text-center">Our vision</h5>
+              <p class="card-text home-main-color">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+             <div class="card-footer">
+              <p class="card-text text-capitalize"><small class="text-muted"><a href="aboutus.html" class="fs-6 text-uppercase float-end" role="button">learn more about us</a></small></p>
+            </div>
+          </div>
+    </div>
+
+      <div class="col col-12 col-md-8 col-lg-4 my-4 ">
+          <div class="card">
+            <img src="Images/cards/7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title home-secondary-color text-uppercase text-center">our goals</h5>
+              <p class="card-text home-main-color">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <p class="card-text text-capitalize"><small class="text-muted"><a href="aboutus.html" class="fs-6 text-uppercase float-end" role="button">learn more about us</a></small></p>
+            </div>
+        </div>
+     </div>
+  </div>
+ </section>
+
+
+
+
+
+
+
+
+
+
+<div class="registeration container container-fluid col-12 col-md-8 col-lg-6 my-3 my-lg-5">
+   <p class="home-secondary-color"> please fill in the registeration form below to get all of the updates for our projects</p>
 </div>
 
 
-<div class="form-address-container">
+<div class="form-address-container ">
 
-  <div class="form-container">
+  <div class="form-container home-main-bg">
     <div class="inner">
       <form action="" id="form">
         <h3>Registration Info</h3>
@@ -539,9 +561,10 @@
         <select name="locations" id="locations">
           <option value="saab" selected="selected">El-Shrouk</option>
           <option value="volvo">Maadi</option>        
-        </select> 
+        </select> <br>
 
-        <textarea class="form-textarea2 my-2" placeholder="Drop us a letter" rows="8" cols="40" style="color: black" >  </textarea>
+        <label for="drop-a-letter" class="text-capitalize">Drop us a letter</label>
+        <textarea class="form-textarea2 my-2" placeholder="Message" id="drop-a-letter" rows="8" cols="40" style="color: black" ></textarea>
 
 
         <div class="form-check">
@@ -561,9 +584,7 @@
 
     <div class="address-inner" >
       <h2 class="text-center text-black ">Our Addresses in Cairo</h2>
-      <h2 class="text-center"> Call Us <span class="phone-span"> <img class="phone-icon" src="https://img.icons8.com/metro/26/000000/phone.png"/>  16385 </span> </h2>
-      <hr >
-
+      <h2 class="text-center"> Call Us <span class="phone-span"> <img class="phone-icon" src="https://img.icons8.com/metro/26/000000/phone.png" style="width: 24px; height: 24px;"/>  16385 </span> </h2>
       <address class="addresses-content text-black">
         <h4>Address 1</h4>
            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio. </p> 
@@ -593,7 +614,7 @@
 
 
 <!-- footer-->
-<footer id="main-foot" >
+<footer id="main-foot" class="bg-dark" >
   <div class="footer-inner-content">
     <div class="social-media pb-8">
       <!--FACEBOOK ICON-->
@@ -612,7 +633,7 @@
             <!-- End social media icons -->
          <div class="middle d-none d-lg-flex">
              Call Us <br> 16385  
-            <i class="fa fa-phone fa-position" style="font-size: 24px;"></i>
+            <i class="fa fa-phone fa-position" style="font-size: 34px;"></i>
          </div>
 
             <div class="footer-links">
@@ -635,11 +656,20 @@
 
 <!-- End of footer-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  
-<script src="jquery.js"></script>
 <script src="Bootstrap/js/bootstrap.min.js"></script>
-<!-- <script src="learningjquery.js"></script> -->
 
 
+ <!--TIPPY LINKS TOOLTIPS -->
+ <script src="https://unpkg.com/@popperjs/core@2"></script>
+ <script src="https://unpkg.com/tippy.js@6"></script>   
+         <!--TIPPY LINKS TOOLTIPS -->   
+ <script src="tippy-tools.js"></script> 
+ <script>
+   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+     return new bootstrap.Tooltip(tooltipTriggerEl)
+   })
+</script> 
 </body>
 </html>
 
