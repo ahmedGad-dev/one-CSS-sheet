@@ -11,7 +11,20 @@
     <meta name="designer" content="Ahmed Amr Gad">
     <link rel="canonical" href="http://example.com/ is the main webpage"/>
     <meta name="robots" content="index, follow">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+                       <!--FONT AWSOME BOOTSTRAP CDN-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+                          <!--OSWALD FONT-->    
+      <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+                          <!--ROBOTO FONT-->
+      <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet"> 
+                          <!--CINZEL FONT-->
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet"> 
+                          <!--LOBESTER FONT-->
+     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Courgette&display=swap" rel="stylesheet">
+                          <!--LOBESTER TWO FONT-->
+     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Courgette&family=Lobster+Two:ital@1&display=swap" rel="stylesheet"> 
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet"> 
      <!--TIPPY LINKS TOOLTIPS -->
      <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
@@ -19,9 +32,7 @@
      <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css"/>
      <link rel="stylesheet" href="https://unpkg.com/tippy.js@6tippy.js/dist/tippy.css">
      <!--TIPPY LINKS TOOLTIPS --> 
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
     <link rel="icon" type="image/png" href="logo-img.jpeg">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -77,11 +88,6 @@
     </div>
     </header>   
 
-
-    
-
-    
-
    
 <!-- 
       <section id="video">
@@ -95,7 +101,7 @@
 
     
   <section id="home-nav">
-        <nav class="navbar navbar-expand-lg navbar-dark candidate navbar-append"  id="nav-main">
+        <nav class="navbar navbar-expand-lg navbar-dark home-main-bg navbar-append cinzel-font"  id="nav-main">
           <div class="container-fluid">  
 
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,25 +119,21 @@
                                      Projects
                         </a>
                         <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="alba.html">Alba El-Shrouk</a></li>
-                            <li><a class="dropdown-item" href="maadigardens.html">Maadi Gardens</a></li>
+                            <li><a class="dropdown-item home-main-color" href="alba.html">Alba El-Shrouk</a></li>
+                            <li><a class="dropdown-item home-main-color" href="maadigardens.html">Maadi Gardens</a></li>
                             
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="contactus.html"><span class="custom-span">Contact Us</span></a></li>
+                            <li><a class="dropdown-item home-main-color" href="contactus.html"><span class="custom-span">Contact Us</span></a></li>
                         </ul>
                     </li>
-
-
-                   
-
-                      
+        
                       <li class="nav-item">
                           <a class="nav-link " href="aboutus.html" tabindex="-1" >About us</a>
                       </li>
 
                       <li class="nav-item">
                         <a class="nav-link "  href="contactus.html" tabindex="-1" >Contact</a>
-                    </li>
+                     </li>
 
                     
                     <li class="nav-item">
@@ -150,7 +152,7 @@
   </section>
 
   <div id="template" tabindex="0" style="display: none;">
-    <ul class="tippy-list">
+    <ul class="tippy-list list-unstyled cinzel-font">
         <li class="tippy-list-item"><a class="tippy-link" href="alba.html#appartements-cards">Alba Appartements</a></li>
         <li class="tippy-list-item"><a class="tippy-link" href="alba.html">Alba Duplexes</a></li>
         <li class="tippy-list-item"><a class="tippy-link">Maadi Appartements</a></li>
@@ -212,14 +214,14 @@
           <section class="carousels-section mt-5 mb-10">
             <div class="container container-fluid">
 
-              <h1 class="home-main-color text-center pt-5 our-pro-title display-1 text-uppercase">Our Projects</h1>
+              <h1 class="home-main-color text-center our-pro-title display-1 text-uppercase cinzel-font">Our Projects</h1>
           <!--Cards and Carousels container-->
           <div class="col-12 col-md-6 the-after-class d-inline-block position-relative text-uppercase fw-bold mt-5 home-gold-color titles-edit pb-1">Alba-Elshrouk</div>
                <div class="container d-flex align-items-center justify-content-around car-container bg-dark mt-4">
            <!--CARD-->
 
             <div class="card text-white mb-3 custom-card1 mt-4">
-              <div class="card-header fs-4 ">Alba-Elshrouk Gallery</div>
+              <div class="card-header fs-4 d-flex flex-row justify-content-center">Alba-Elshrouk Gallery</div>
               <div class="card-body">
                 <h5 class="card-title fs-4 mb-3 text-center">Alba</h5>
                 <p class="card-text fs-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -284,7 +286,7 @@
                      <!--CARD-->
                <div class="card-container">
                    <div class="card text-white mb-3 custom-card1">
-                        <div class="card-header fs-4" >Maadi Gardens Gallery</div>
+                        <div class="card-header fs-4 d-flex flex-row justify-content-center">Maadi Gardens Gallery</div>
                         <div class="card-body">
                             <h5 class="card-title fs-4 mb-3 text-center">Maadi Gardens</h5>
                             <p class="card-text fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, 
@@ -377,7 +379,7 @@
 
     <!--INFORMATION, GOALS AND DESCRIPTIONS -->
     <div class="albums-container22 container container-fluid mb-5 ">
-        <div class="display-1 text-center mt-5 mb-5 home-secondary-color text-uppercase">Our Services</div>
+        <div class="display-1 text-center mt-5 mb-5 home-secondary-color text-uppercase cinzel-font">Our Services</div>
         <!--3 HORIZONTAL SERVICES-->
             <div class="gallery-div container "> 
               <div class="container-fluid col-lg-4 col-md-8 mb-5  d-flex justify-content-center">
@@ -523,17 +525,19 @@
 
 
 
-<div class="registeration container container-fluid col-12 col-md-8 col-lg-6 my-3 my-lg-5">
+<div class="registeration container container-fluid col-12 col-md-8 col-lg-6 my-3">
    <p class="home-secondary-color"> please fill in the registeration form below to get all of the updates for our projects</p>
 </div>
 
-
-<div class="form-address-container ">
-
-  <div class="form-container home-main-bg">
-    <div class="inner">
+<!--FORM AND ADDRESS CONTAINER-->
+<div class="container container-fluid d-flex flex-column flex-lg-row ">
+  <!--MAIN FORM-->
+  <div class="form-container home-main-bg col-12 col-lg-6 p-3 d-flex justify-content-center align-items-center">
+    <!--FORM INNER-->
+    <div class="inner col-12 col-md-8 ">
       <form action="" id="form">
         <h3>Registration Info</h3>
+        <!--NAME-->
         <div class="form-group">
           <div class="form-wrapper">
             <label for="">First Name</label>
@@ -544,28 +548,28 @@
             <input type="text" class="form-control">
           </div>
         </div>
-
+          <!--PHONE-->
         <div class="form-wrapper">
           <label for="">Phone</label>
           <input type="text" class="form-control">
         </div>
 
-        
+        <!--EMAIL-->
         <div class="form-wrapper">
           <label for="">Email</label>
           <input type="text" class="form-control">
         </div>
-
+      <!--LOCATION-->
         <label for="locations">Location of interest:</label>
-
         <select name="locations" id="locations">
           <option value="saab" selected="selected">El-Shrouk</option>
           <option value="volvo">Maadi</option>        
         </select> <br>
-
-        <label for="drop-a-letter" class="text-capitalize">Drop us a letter</label>
-        <textarea class="form-textarea2 my-2" placeholder="Message" id="drop-a-letter" rows="8" cols="40" style="color: black" ></textarea>
-
+        <!--TEXT AREA-->
+      <div class="input-group mb-2">
+        <span class="input-group-text">Drop us a letter</span>
+        <textarea class="form-control bg-light" aria-label="With textarea" style="height: 150px;"></textarea>
+      </div>
 
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -573,42 +577,33 @@
             I caccept the Terms of Use & Privacy Policy.
           </label>
         </div>           
-
-        
         <button class="registeration-button">Register Now</button>
       </form>
     </div>
   </div>
 
-  <div class="addresses-container">
-
+<!--ADDRESSES CONTAINER-->
+<div class="addresses-container p-5 col-12 col-lg-6 position-relative top-lg-50">
     <div class="address-inner" >
-      <h2 class="text-center text-black ">Our Addresses in Cairo</h2>
+      <h2 class="text-center ">Our Addresses in Cairo</h2>
       <h2 class="text-center"> Call Us <span class="phone-span"> <img class="phone-icon" src="https://img.icons8.com/metro/26/000000/phone.png" style="width: 24px; height: 24px;"/>  16385 </span> </h2>
-      <address class="addresses-content text-black">
-        <h4>Address 1</h4>
-           <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio. </p> 
+      <address class="addresses-content ">
+           <h4 class="home-main-color">Address 1</h4>
+           <p class="text-secondary-color-small"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio. </p> 
       </address>
 
-      <address class="addresses-content text-black">
-        <h4>Address 2</h4>
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio.
+      <address class="addresses-content">
+            <h4 class="home-main-color">Address 2</h4>
+            <p class="text-secondary-color-small"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio.</p>
       </address>
 
-      <address class="addresses-content text-black">
-        <h4>Address 3</h4>
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio.
-
-    </div>
-    
+      <address class="addresses-content">
+            <h4 class="home-main-color">Address 3</h4>
+            <p class="text-secondary-color-small"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio. </p>
+      </address>
+    </div> 
   </div>
-
 </div>
-
-
-
-
-
 
 
 
@@ -616,7 +611,7 @@
 <!-- footer-->
 <footer id="main-foot" class="bg-dark" >
   <div class="footer-inner-content">
-    <div class="social-media pb-8">
+    <div class="social-media my-3">
       <!--FACEBOOK ICON-->
                  <a> <img src="https://img.icons8.com/nolan/64/facebook-new.png" style="width: 40px; height:40px;" title="Facebook"/> </a>
 
@@ -645,12 +640,11 @@
                     <li><a href="#"><span>FAQ</span></a></li>
                     <li><a href= "aboutus.html"><span>About us</span></a></li>
                 </ul>
-            </div>
-          
+            </div>         
         </div>
-    <div class="copyrights"> 
-            <p class="footer-para">Copy rights &copy; 2021 Urban Developments For Real Estates</p>
-            <p class="footer-para signature"> Designed and Developed by Ahmed Gad</p>
+    <div class="copyrights p-3"> 
+            <p class="footer-para m-0 mt-3">Copy rights &copy; 2021 Urban Developments For Real Estates</p>
+            <p class="footer-para signature m-0 mb-3"> Designed and Developed by Ahmed Gad</p>
     </div>
   </footer>
 

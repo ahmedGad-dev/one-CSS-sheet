@@ -3,7 +3,6 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-            <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet"> 
             <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
@@ -15,7 +14,6 @@
             <!--TIPPY LINKS TOOLTIPS -->
             <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="styles.css">         
-            <link rel="stylesheet" href="gallery-style.css">
             <script src="https://kit.fontawesome.com/a076d05399.js"></script>
             <script src="jquery-3.5.1.js"></script>          
             <script src="maadi.js"></script>
@@ -96,46 +94,50 @@
         <div class="container custom-about-container">  
             <img src="images/logo/logo3.jpg">
 
-        <div class="the-after-class-perm text-primary fs-4 text-danger mt-5">Our previous projects</div>
+        <div class="custom">
+            <h4 class="home-gold-color the-after-class-perm fs-1 my-4 pb-2 my-sm-5 "> Our Previous Projects</h4>
+        </div>
 
-        <div class="container container-fluid d-flex flex-column flex-md-row my-3 p-6 justify-content-center align-items-center ">
-            <div class="inner1 col-8 col-md-3 mb-5 mx-5">
-                <div class="card" >
+        <div class="container container-fluid d-flex flex-column flex-lg-row my-3 p-5 justify-content-center align-items-center bg-dark col-md-10 col-lg-12">
+
+            <div class="inner1 col-10 col-md-8 col-lg-4 mx-2 my-4">
+                <div class="card border-warning border-3" >
                     <img src="Images/favicon.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <p class="card-text  text-center text-capitalize bg-dark text-white p-2">Maadi Gardens</p>
+                      <p class="card-text  text-center text-capitalize bg-dark text-white p-2 mt-2">Maadi Gardens</p>
                     </div>
                   </div>
             </div>
 
-            <div class="inner1 col-8 col-md-3  mb-5 mx-5 position-relative">
-                <div class="card" >
+            <div class="inner1 col-10 mx-2 my-4 col-md-8 col-lg-4">
+                <div class="card border-warning  border-3" >
                     <span class="badge rounded-pill bg-danger position-absolute top-0 end-0 fs-6 text-uppercase" >New</span>
                     <img src="Images/alba-logo.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <p class="card-text text-center text-capitalize bg-dark text-white p-2">Alba-Elshorouk</p>
+                      <p class="card-text text-center text-capitalize bg-dark text-white p-2 mt-2">Alba-Elshorouk</p>
                     </div>
-                  </div>
+               </div>
             </div>
 
-            <div class="inner1 col-8 col-md-3 mx-5 mb-5">
-                <div class="card" >
+            <div class="inner1 col-10 mx-1 my-4 col-md-8 col-lg-4">
+                <div class="card border-warning  border-3" >
                     <img src="Images/joulz-logo.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <p class="card-text  text-center text-capitalize bg-dark text-white p-2">Joulz</p>
+                      <p class="card-text  text-center text-capitalize bg-dark text-white p-2 mt-2">Joulz</p>
                     </div>
                   </div>
             </div>
         </div>
     </div>
      
-          
       
- <section class="managers-board mb-24 container">
+    <div class="custom">
+        <h4 class="home-gold-color the-after-class-perm fs-1 mt-5"> Managers Leaderbored</h4>
+    </div>
 
-                    <div class="the-after-class-perm text-primary fs-4 text-danger my-5">Our Mangers leaderboard</div>
-                    
-                <div class="container container-fluid carousel-custom">
+
+    <section class="managers-board mb-24 container bg-dark p-5 my-5">
+                <div class="container container-fluid col-md-8 ">
                     <div id="mangers-carousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#mangers-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -149,49 +151,49 @@
                         <div class="carousel-inner mangers-image-item">
                             <div class="carousel-item active">
                                 <img src="images/spiderweb.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="manger-name">First manager</h5>
+                                <div class="carousel-caption d-none d-md-block my-5">
+                                    <h5 class="manger-name text-uppercase my-2">First manager</h5>
                                     <p  class="manger-role"> Some representative placeholder content for the first slide.</p>
                                 </div>
                             </div>
 
                             <div class="carousel-item mangers-image-item ">
                                 <img src="images/woman-camera.jpg " class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block  ">
-                                <h5 class="manger-name">Second manager</h5>
-                                <p class="manger-role">Some representative placeholder content for the second slide.</p>
-                                </div>
+                                    <div class="carousel-caption d-none d-md-block my-5 ">
+                                        <h5 class="manger-name text-uppercase my-2">Second manager</h5>
+                                        <p class="manger-role">Some representative placeholder content for the second slide.</p>
+                                   </div>
                             </div>
 
                             <div class="carousel-item mangers-image-item">
                                 <img src="images/programming.jpg " class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                <h5 class="manger-name">Third manager</h5>
-                                <p class="manger-role">Some representative placeholder content for the third slide.</p>
+                                <div class="carousel-caption d-none d-md-block my-5">
+                                    <h5 class="manger-name text-uppercase my-2">Third manager</h5>
+                                    <p class="manger-role">Some representative placeholder content for the third slide.</p>
                                 </div>
                             </div>
 
                             <div class="carousel-item mangers-image-item">
                                 <img src="images/spiderweb.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                <h5 class="manger-name">Fourth manager </h5>
-                                <p class="manger-role">Some representative placeholder content for the third slide.</p>
+                                <div class="carousel-caption d-none d-md-block my-5">
+                                    <h5 class="manger-name text-uppercase my-2">Fourth manager </h5>
+                                    <p class="manger-role">Some representative placeholder content for the third slide.</p>
                                 </div>
                             </div>
 
                             <div class="carousel-item mangers-image-item">
                                 <img src="images/woman-camera.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                <h5 class="manger-name">fifth manager</h5>
-                                <p class="manger-role">Some representative placeholder content for the third slide.</p>
+                                <div class="carousel-caption d-none d-md-block my-5">
+                                    <h5 class="manger-name text-uppercase my-2">fifth manager</h5>
+                                    <p class="manger-role">Some representative placeholder content for the third slide.</p>
                                 </div>
                             </div>
 
                             <div class="carousel-item mangers-image-item">
                                 <img src="images/programming.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                <h5 class="manger-name">six manager</h5>
-                                <p class="manger-role">Some representative placeholder content for the third slide.</p>
+                                <div class="carousel-caption d-none d-md-block my-5">
+                                    <h5 class="manger-name text-uppercase my-2">six manager</h5>
+                                    <p class="manger-role">Some representative placeholder content for the third slide.</p>
                                 </div>
                             </div>
                         </div>
@@ -210,28 +212,9 @@
 
 
 
-<!--
-
-    <div class="container d-flex justify-content-center p-6">
-        <button type="button" class="btn btn-primary position-relative me-5">
-            Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
-          </button>
-          
-          <button type="button" class="btn btn-dark position-relative me-5">
-            Marker <svg width="1em" height="1em" viewBox="0 0 16 16" class="position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill" fill="#212529" xmlns="http://www.w3.org/2000/svg"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
-          </button>
-          
-          <button type="button" class="btn btn-primary position-relative me-5">
-            Alerts <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden">unread messages</span></span>
-          </button>
-      
-    </div>-->
-
-
-            <footer id="main-foot">
+            <footer id="main-foot" class="bg-dark">
               <div class="footer-inner-content">
-
-                <div class="social-media pb-8">
+                <div class="social-media my-3">
                     <a> <img src="https://img.icons8.com/nolan/64/facebook-new.png" style="width: 40px; height:40px;" title="Facebook"/> </a>
 
                     <!--TWITTER ICON-->
@@ -260,13 +243,12 @@
                                 <li><a href="#"><span>FAQ</span></a></li>
                                 <li><a href= "aboutus.html"><span>About us</span></a></li>
                             </ul>
-                        </div>
-                      
+                        </div>             
                     </div>
-                <div class="copyrights"> 
-                        <p class="footer-para">Copy rights &copy; 2021 Urban Developments For Real Estates</p>
-                        <p class="footer-para signature"> Designed and Developed by Ahmed Gad</p>
-                </div>
+                    <div class="copyrights p-3"> 
+                        <p class="footer-para m-0 mt-3">Copy rights &copy; 2021 Urban Developments For Real Estates</p>
+                        <p class="footer-para signature m-0 mb-3"> Designed and Developed by Ahmed Gad</p>
+                   </div>
               </footer>
               <!-- End of footer-->
               <script src="bootstrap/js/bootstrap.min.js"></script>
