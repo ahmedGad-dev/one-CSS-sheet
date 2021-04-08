@@ -656,12 +656,10 @@ font-weight: bold;
 #locations {color: black; padding: 7px; font-weight: 600; margin-bottom: 15px;}
 .custom-card1{background-color: #525252;
    max-width: 20rem;
-    height: 24rem;
 }
 
 .custom-card1 .card-text{
-         letter-spacing: 1.2px; word-spacing: 1.5px; text-align: justify; word-break: normal;
-}
+         letter-spacing: 0.8px; word-spacing: 0.5px; word-break: normal; line-height: 1.7rem;}
 
 
 .card .carousel-item img{max-width: 100%; height: auto;}
@@ -674,13 +672,13 @@ font-weight: bold;
     .custom-container{ display: flex; justify-content: space-between;}
     .car-container{flex-direction: column;}
     .carosel-container{width: 100%; }
-    .custom-card1{max-width: 30rem; height: 20rem;}
+    .custom-card1{max-width: 30rem;}
 }
 
-
+/*
 @media(max-width:400px){
   .custom-card1{height: 23rem;}
-}
+}*/
 
 .custom-carousel-inner{border: 5px solid rgb(40, 70, 96) ; margin-top: 4rem; border-radius: 15%;}
 .project-carosels{display: flex; align-items: center; justify-content: center; }
@@ -728,24 +726,36 @@ font-weight: bold;
          /********************BACKGROUNDS***********************/
 
          /***************************FONT SIZES*********************/
-         .medium-font-size{font-size: 24px;}
-  
-          .cinzel-font{font-family: 'cinzel', sans-serif;}
-          .lobester-font{font-family: 'lobester', sans-serif;}
-          .lobester-two{font-family: 'Lobster Two', cursive;}
-          .custom-card1 .card-header{font-family: 'Lobster Two', cursive; letter-spacing: 0.8px;}
-
-
+          .medium-font-size{font-size: 24px;}      
+          .cinzel-font{font-family: 'cinzel', sans-serif, serif;}
+          .lobester-font{font-family: 'lobester', sans-serif, serif;}
+          .lobester-two{font-family: 'Lobster Two', cursive , sans-serif;}
+          .merienda{font-family: 'Merienda', cursive, sans-serif;}
+          .custom-card1 .card-header{font-family: 'Raleway', sans-serif; letter-spacing: 1px; font-weight: bold; padding: 10px;}
+          .raleway{font-family: 'Raleway', sans-serif; color: #212529; font-weight: bold;}
+          .raleway-font{font-family: 'Raleway', sans-serif;}
          /*TIPPY CUSTOMIZATION*/
-      .tippy-list{background-color: white; padding: 15px; cursor: pointer; list-style-type: initial; list-style-type: none;}
-      .tippy-list .tippy-link{color: rgb(40, 70, 96); text-transform: capitalize; cursor: pointer; font-size: 21px;}
-      .tippy-list-item{margin-bottom: 7px;}
-      .tippy-list .tippy-link:hover{text-decoration: underline; }
-      .tippy-list-item .tippy-link:hover{color: #1e2125;
-        background-color: #e9ecef;}
-      
-      /*TIPPY CUSTOMIZATION*/
+         
+         .dropdown-menu .dropdown-item.raleway:hover{text-decoration: none; color: #0d6efd;}
+         .nav-item .btn.cinzel-font{color: rgba(255,255,255,.55);}
+         .nav-item .btn.cinzel-font:hover{color: white;}
+         .tippy-list{background-color: white; cursor: pointer; list-style-type: initial; list-style-type: none; padding: 10px;}
+         .tippy-list .tippy-link{ color: inherit;
+             text-transform: uppercase;
+             cursor: pointer;
+             font-size: 18px;
+             font-weight: bold; 
+             letter-spacing: 1.2px; 
+             line-height: 1rem;
+            
+            }   
 
+
+        .tippy-list .tippy-link:hover{text-decoration: none; }
+        .tippy-list-item .tippy-link:hover{color: #0d6efd;}    
+        /*TIPPY CUSTOMIZATION*/
+        #nav-main .nav-item .nav-link:hover{text-decoration: none;}
+        #nav-main .nav-item .nav-link{letter-spacing: 0.7px;}
          .form-control {
           border: 1px solid #ccc;
           display: block;
@@ -798,16 +808,16 @@ font-weight: bold;
               .the-after-class-perm::after{width: 15%;}
             }
 
-
-
         .test-bg{ background-color: #4c4177;
            background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);}
-       .custom-card1 .btn {letter-spacing: 0.5px;
-      background-color: rgb(40, 70, 96);}
-      .custom-card1 .card-header{background-color: #E9E9E9;
-      color:  rgb(40, 70, 96);}
 
+       .custom-card1 .btn {letter-spacing: 0.7px; background-color: rgb(40, 70, 96); font-size: 20px; line-height: 2rem; }
+       .custom-card1 .card-header{background-color: #E9E9E9;
+              color:  rgb(40, 70, 96);}
 
+          @media(max-width:400px){
+            .custom-card1 .btn {line-height: 1rem; font-size: 15px;}
+          }
       /****************Form styling***********************/
 
       
@@ -1004,7 +1014,7 @@ select {
     .address-inner .phone-icon {margin: 0; }
     .phone-span{margin-left: 5px;}
     .addresses-container{background-image: url('bg-2.jpg');}
-    .custom h4{font-size: smaller; font-family: 'Alegreya Sans SC';  position: relative; left: 15%;}
+    .custom h4{font-size: smaller;  position: relative; left: 15%;}
     .custom h4:after {
       content:"";
       display: inline-block;
@@ -1052,10 +1062,8 @@ select {
   }
 
 
-  
 
 /***************************MAADI GARDENS AND ALBA PAGES STYLINGS***************/
-
 
 
 .major-styling {
@@ -1109,11 +1117,7 @@ select {
     word-spacing: 1.5px;
     word-break: normal;}
 
-
-     .card-img-overlay{background-color: rgba(0, 0,0,0.5); color: white; height: 25%; text-align: center; text-transform: capitalize; 
-   }
-
-
+  .card-img-overlay{background-color: rgba(0, 0,0,0.5); color: white; height: 25%; text-align: center; text-transform: capitalize;}
 
    html, body{padding: 0; margin: 0; width: 100%; height: 100%;}
 
@@ -1181,8 +1185,6 @@ select {
    }
   
    .fainting{animation: none;}
-
-
 
    /***********************ABOUT US PAGE CUSTOMIZATION***********************/
 
@@ -1283,16 +1285,8 @@ select {
      .description {display: flex; align-items: center; flex-direction: column;  margin-top: 30px;  }
      .the-container{color: aliceblue;}
      .carousel-caption{background-color: rgba(0,0,0,0.6);}
-  
-     /*TIPPY CUSTOMIZATION*/
-     .tippy-list{background-color: white; padding: 15px; cursor: pointer;}
-     .tippy-list .tippy-link{color: rgb(40, 70, 96); text-transform: capitalize; cursor: pointer; font-size: 21px;}
-     .tippy-list-item{margin-bottom: 7px;}
-     .tippy-list .tippy-link:hover{text-decoration: underline; } 
-    /*TIPPY CUSTOMIZATION*/
+     .bold{font-weight: bold;}
      
-     #nav-main .nav-item .nav-link:hover{text-decoration: none;}
-
 
       /*********************FONTS****************************/
           /* font-family: Gill Sans, Verdana;*/
