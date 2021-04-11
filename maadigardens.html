@@ -8,6 +8,7 @@
     <meta name="robots" content="index, follow">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+                     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
                      <!--FONT AWSOME BOOTSTRAP CDN-->
                      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
                      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -86,10 +87,10 @@
                        <button type="button" class=" nav-link tippy-button btn btn-outline-secondary cinzel-font px-3" > Services </button>
                   </li>
              </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-secondary text-white" type="submit">Search</button>
-                </form>
+                <div class="logo-wrapper">
+                  <span class="navbar-span-big"> UDCO </span>
+                  <span class="navbar-span-small"> Urban Developments For Real Estates </span>
+              </div>
            </div>
         </div>    
     </nav>
@@ -111,7 +112,7 @@
 
 <div class="container container-fluid mt-5">
   <h2 class="display-4 home-main-color text-uppercase bold">maadi gardens</h2>
-  <h2 class="display-6 text-gray text-uppercase home-main-color fw-bold fs-6 raleway ">the middle of cairo</h2>
+  <h2 class="display-6 text-gray text-uppercase home-main-color fw-bold fs-6 raleway letter-space">the middle of cairo</h2>
   <div id="maadi-alba-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 100rem;">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#maadi-alba-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -199,10 +200,10 @@
 <!--2 SECTIONS FOR DUPLEXES, APPARTEMENTS AND PENTHOUSES CAROUSELS-->
 <div class="container mb-4">
     <h2 class="paras-icons-title display-6 text-uppercase home-main-color mt-5 mb-3">Maadi gardens properties</h2>
-    <div class="medium-font-size home-gold-color the-after-class-perm position-relative left-10 pb-2 cinzel-font"> Maadi Appartments</div>
+    <div class="medium-font-size home-gold-color the-after-class-perm position-relative left-10 pb-2"> Maadi Appartments</div>
 </div>
      <!--DUPLEXES-->
-<section id="duplexes-cards" class=" d-flex flex-column flex-lg-row container bg-dark">
+<section id="duplexes-cards" class=" d-flex flex-column flex-lg-row container bg-dark" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
 <!--Alba Carousel-->
 <div id="card-carousel-one" class="carousel slide col-12 col-lg-6 d-flex justify-content-center align-items-center flex-row mt-4 mt-sm-5 mb-3 mb-lg-5" 
 data-bs-touch="false" data-bs-interval="false" data-bs-ride="carousel">
@@ -306,10 +307,10 @@ data-bs-touch="false" data-bs-interval="false" data-bs-ride="carousel">
 
   <!--APPARTEMENTS CAROUSEL SECTION-->
 <div class="container mb-4">
-  <div class="medium-font-size home-gold-color the-after-class-perm  mt-5 position-relative left-10 mt-5 pb-2 cinzel-font"> Maadi Penthouses</div>
+  <div class="medium-font-size home-gold-color the-after-class-perm  mt-5 position-relative left-10 mt-5 pb-2"> Maadi Penthouses</div>
 </div>
       <!--Maadi penthouses section-->
-  <section id="appartements-cards" class="mb-5 d-flex flex-column flex-lg-row my-10 container bg-dark"> 
+  <section id="appartements-cards" class="mb-5 d-flex flex-column flex-lg-row my-10 container bg-dark" data-aos="fade-left" data-aos-duration="1250" data-aos-delay="150"> 
     <!--Alba Carousel-->
     <div id="card-carousel-two" class="carousel slide col-12 col-lg-6 d-flex justify-content-center align-items-center flex-row mt-4 mt-sm-5 mb-3 mb-lg-5"
      data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false">
@@ -411,10 +412,10 @@ data-bs-touch="false" data-bs-interval="false" data-bs-ride="carousel">
 
           <!--PENTHOUSES CAROUSEL SECTION-->
     <div class="container mb-4">
-      <div class="medium-font-size home-gold-color display-6 the-after-class-perm position-relative left-10 mt-5 pb-2 cinzel-font"> Maadi Mall Shops</div>
+      <div class="medium-font-size home-gold-color display-6 the-after-class-perm position-relative left-10 mt-5 pb-2 "> Maadi Mall Shops</div>
     </div>
       <!--ALBA MALL SHOPS SECTION-->
-      <section id="penthouse-cards" class="mb-5 d-flex flex-column flex-lg-row my-10 container bg-dark">
+      <section id="penthouse-cards" class="mb-5 d-flex flex-column flex-lg-row my-10 container bg-dark" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
         <!--Alba Carousel-->
         <div id="card-carousel-three" class="carousel slide col-12 col-lg-6 d-flex justify-content-center align-items-center flex-row mt-4 mt-sm-5 mb-3 mb-lg-5 flex-row my-5" 
         data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false">
@@ -519,7 +520,7 @@ data-bs-touch="false" data-bs-interval="false" data-bs-ride="carousel">
 
 
 <div class="container container-fluid">
-      <div class="map-div container d-flex justify-content-center">
+      <div class="map-div container d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="800">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.810057482222!2d31.332212415054627!3d29.984888281904098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458396a6c724be9%3A0x9b381d01b9957f64!2sMaadi%20Gardens!5e0!3m2!1sen!2seg!4v1615111108149!5m2!1sen!2seg" 
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="mb-6"></iframe>
       </div>
@@ -528,7 +529,7 @@ data-bs-touch="false" data-bs-interval="false" data-bs-ride="carousel">
 
       <div class="albums-container25 ">
         <!-- SERVICES CONTAINER-->
-          <div class="container mb-2"> 
+          <div class="container mb-2" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800"> 
             <div class="d-flex justify-content-center align-items-center ">   
                 <div class="d-flex justify-content-center align-items-center flex-column">              
                     <div class="display-6 d-flex flex-row align-items-center justify-content-center mb-3 m-3 home-gold-color d-flex align-self-start ">
@@ -545,7 +546,7 @@ data-bs-touch="false" data-bs-interval="false" data-bs-ride="carousel">
 
 
        <!-- LOCATION CONTAINER-->
-          <div class="container my-2">
+          <div class="container my-2" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
                 <div class="d-flex justify-content-center align-items-center ">    
                   <div class="d-flex justify-content-center align-items-center flex-column">
                     <div class = "display-6 d-flex flex-row align-items-center justify-content-center mb-3 m-3 home-gold-color d-flex align-self-start">
@@ -561,7 +562,7 @@ data-bs-touch="false" data-bs-interval="false" data-bs-ride="carousel">
           </div>
 
             <!--SECURITY CONTAINER-->
-            <div class="container my-2">
+            <div class="container my-2" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
               <div class="d-flex justify-content-center align-items-center ">  
                   <div class="d-flex justify-content-center align-items-center flex-column">
                     <div class = "display-6 d-flex flex-row align-items-center justify-content-center mb-3 m-3 home-gold-color d-flex align-self-start">
@@ -653,6 +654,11 @@ data-bs-touch="false" data-bs-interval="false" data-bs-ride="carousel">
        return new bootstrap.Tooltip(tooltipTriggerEl)
      })
  </script> 
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>

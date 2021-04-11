@@ -8,6 +8,7 @@
     <meta name="description" content="This is meta description Sample. We can add up to 158.">
     <link rel="canonical" href="http://example.com/ is the main webpage"/>
     <meta name="robots" content="index, follow">
+                     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
                      <!--FONT AWSOME BOOTSTRAP CDN-->
                      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
                      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -86,10 +87,10 @@
                       </button>
                   </li>             
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-secondary text-white" type="submit">Search</button>
-                </form>
+                <div class="logo-wrapper">
+                  <span class="navbar-span-big"> UDCO </span>
+                  <span class="navbar-span-small"> Urban Developments For Real Estates </span>
+               </div>
            </div>
         </div>    
     </nav>
@@ -115,7 +116,7 @@
 
 <div class="container container-fluid mt-5">
   <h2 class="display-4 home-main-color text-uppercase bold ">Alba residence</h2>
-  <h2 class="display-6 text-gray text-uppercase raleway fw-bold fs-6">Enjoy the luxury life</h2>
+  <h2 class="display-6 text-gray text-uppercase raleway fw-bold fs-6 letter-space">Enjoy the luxury life</h2>
   <div id="maadi-alba-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 100rem;">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#maadi-alba-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -244,10 +245,11 @@
 
 <div class="container mb-4">
     <h2 class="paras-icons-title display-6 text-red home-main-color text-uppercase mt-5 mb-3">Alba residence properties</h2>
-    <div class="display-6 pb-2 position-relative home-gold-color left-10 medium-font-size the-after-class-perm cinzel-font"> Alba Duplexes</div>
+    <div class="display-6 pb-2 position-relative home-gold-color left-10 medium-font-size the-after-class-perm"> Alba Duplexes</div>
 </div>
 
-<section id="duplexes-cards" class=" d-flex flex-column flex-lg-row justify-content-center align-items-center container bg-dark">
+<section id="duplexes-cards" class=" d-flex flex-column flex-lg-row justify-content-center align-items-center container bg-dark"
+ data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
   <!--Alba Carousel-->
   <div id="card-carousel-one" class="carousel slide col-12 col-lg-6 d-flex justify-content-center align-items-center flex-row mt-4 mt-sm-5 mb-3 mb-lg-5"
    data-bs-touch="false" data-bs-interval="false" data-bs-ride="carousel">
@@ -350,10 +352,11 @@
   
     <!--APPARTEMENTS CAROUSEL SECTION-->
   <div class="container mb-4">
-    <div class="display-6 pb-2 position-relative left-10 mt-md-5 home-gold-color medium-font-size the-after-class-perm cinzel-font"> Alba Appartements</div>
+    <div class="display-6 pb-2 position-relative left-10 mt-md-5 home-gold-color medium-font-size the-after-class-perm"> Alba Appartements</div>
   </div>
 
-    <section id="appartements-cards" class="mb-5 d-flex flex-column flex-lg-row justify-content-center align-items-center container bg-dark">
+    <section id="appartements-cards" class="mb-5 d-flex flex-column flex-lg-row justify-content-center align-items-center container bg-dark" 
+     data-aos="fade-left" data-aos-duration="1250" data-aos-delay="150">
       <!--Alba Carousel-->
       <div id="card-carousel-two" class="carousel slide col-12 col-lg-6 d-flex justify-content-center align-items-center flex-row mt-4 mt-sm-5 mb-3 mb-lg-5"
        data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false">
@@ -456,10 +459,11 @@
   
             <!--PENTHOUSES CAROUSEL SECTION-->
       <div class="container mb-4">
-        <div class="display-6 pb-2 mt-5 position-relative left-10 home-gold-color medium-font-size the-after-class-perm cinzel-font"> Alba Penthouses</div>
+        <div class="display-6 pb-2 mt-5 position-relative left-10 home-gold-color medium-font-size the-after-class-perm"> Alba Penthouses</div>
       </div>
       <!--PENTHOUSES SECTION-->
-        <section id="penthouse-cards" class="mb-5 d-flex flex-column flex-lg-row justify-content-center  align-items-center container bg-dark">
+        <section id="penthouse-cards" class="mb-5 d-flex flex-column flex-lg-row justify-content-center  align-items-center container bg-dark" 
+         data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
           <!--Alba Carousel-->
           <div id="card-carousel-three" class="carousel slide col-12 col-lg-6 d-flex justify-content-center align-items-center flex-row mt-4 mt-sm-5 mb-3 mb-lg-5"
            data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false">
@@ -566,7 +570,7 @@
     
 
 <div class="container container-fluid">
-      <div class="map-div container d-flex justify-content-center ">
+      <div class="map-div container d-flex justify-content-center"  data-aos="zoom-in" data-aos-delay="250" data-aos-duration="800">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d887116.376022774!2d30.879743276052714!3d29.711116065169897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457f725183ee5a5%3A0x3df0deff87c37efb!2z2YPZhdio2YjZhtivINin2YTYqNinINin2YTYtNix2YjZgg!5e0!3m2!1sen!2seg!4v1615118826463!5m2!1sen!2seg" 
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
@@ -575,9 +579,9 @@
 <h2 class="display-6 text-uppercase home-main-color my-2">About The Project</h2>
 
         <!-- SERVICES LOCATION AND SECURITY-->
-      <div class="albums-container25 ">
+      <div class="albums-container25">
         <!-- SERVICES CONTAINER-->
-          <div class="container mb-2"> 
+          <div class="container mb-2" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800"> 
             <div class="d-flex justify-content-center align-items-center ">   
                 <div class="d-flex justify-content-center align-items-center flex-column">              
                     <div class="display-6 d-flex flex-row align-items-center justify-content-center mb-3 m-3 home-gold-color d-flex align-self-start ">
@@ -594,7 +598,7 @@
 
 
        <!-- LOCATION CONTAINER-->
-          <div class="container my-2">
+          <div class="container my-2" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
                 <div class="d-flex justify-content-center align-items-center ">    
                   <div class="d-flex justify-content-center align-items-center flex-column">
                     <div class = "display-6 d-flex flex-row align-items-center justify-content-center mb-3 m-3 home-gold-color d-flex align-self-start">
@@ -611,7 +615,7 @@
           </div>
 
             <!--SECURITY CONTAINER-->
-            <div class="container my-2">
+            <div class="container my-2" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
               <div class="d-flex justify-content-center align-items-center ">  
                   <div class="d-flex justify-content-center align-items-center flex-column">
                     <div class = "display-6 d-flex flex-row align-items-center justify-content-center mb-3 m-3 home-gold-color d-flex align-self-start">
@@ -705,7 +709,10 @@
               return new bootstrap.Tooltip(tooltipTriggerEl)
             })
         </script> 
-     
-     
+
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+            AOS.init();
+          </script>
 </body>
 </html>

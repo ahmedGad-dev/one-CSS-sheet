@@ -12,6 +12,7 @@
     <link rel="canonical" href="http://example.com/ is the main webpage"/>
     <meta name="robots" content="index, follow">
                        <!--FONT AWSOME BOOTSTRAP CDN-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
                           <!--OSWALD FONT-->    
@@ -146,10 +147,10 @@
                       </button>
                    </li>
                   </ul>
-                  <form class="d-flex">
-                      <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-secondary text-white " type="submit">Search</button>
-                  </form>
+                      <div class="logo-wrapper">
+                        <span class="navbar-span-big"> UDCO </span>
+                        <span class="navbar-span-small"> Urban Developments For Real Estates </span>
+                    </div>
              </div>
           </div>    
       </nav>
@@ -213,16 +214,17 @@
                 <!--CAROUSELS AND CARDS SECTION-->
           <section class="carousels-section mt-3">
             <div class="container container-fluid">
-              <h1 class="home-main-color text-center our-pro-title display-3 p-2 text-uppercase cinzel-font mb-0 mt-sm-4 my-md-4 my-lg-5">Our Projects</h1>
+              <h1 class="home-main-color text-center our-pro-title display-3 p-2 text-uppercase cinzel-font mb-0 mt-sm-4 my-md-4 my-lg-5" data-aos="fade-right"  data-aos-duration="700">
+                Our Projects</h1>
           <!--Cards and Carousels container-->
           <div class="col-12 col-md-6 the-after-class d-inline-block position-relative text-uppercase fw-bold  home-gold-color titles-edit pb-1">Alba-Elshrouk</div>
                <div class="container d-flex align-items-center justify-content-around car-container bg-dark mt-3">
            <!--CARD-->
 
-            <div class="card text-white mb-3 custom-card1 mt-4">
+            <div class="card text-white mb-3 custom-card1 mt-4" data-aos="zoom-in"  data-aos-duration="700">
               <div class="card-header fs-4 d-flex flex-row justify-content-center">Alba-Elshrouk Gallery</div>
               <div class="card-body my-2">    
-                <p class="card-text fs-6 ">  <span class="card-title fs-4 ">Alba</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p class="card-text fs-6 sans-serif-font">  <span class="card-title fs-4 ">Alba</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                    Cupiditate dolore eos facere qui, earum quaerat odio reiciendis, maxime quidem fugiat iste incidunt sapiente corporis soluta.
                </p>
                    <div class="btn btn-secondary text-capitalize d-flex justify-content-center my-4 py-3"> <a class="text-white" href="alba.html"> Click here for more details </div></a>
@@ -284,10 +286,10 @@
                 <div class="container d-flex align-items-center justify-content-around mt-4 car-container">
                      <!--CARD-->
                <div class="card-container">
-                   <div class="card text-white mb-3 custom-card1">
+                   <div class="card text-white mb-3 custom-card1" data-aos="zoom-in"  data-aos-duration="700">
                         <div class="card-header fs-4 d-flex flex-row justify-content-center">Maadi Gardens Gallery</div>
                         <div class="card-body my-2">   
-                            <p class="card-text fs-6"> <span class="card-title fs-4">Maadi </span> gardens lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, 
+                            <p class="card-text fs-6 sans-serif-font"> <span class="card-title fs-4">Maadi </span> gardens lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, 
                                 architecto pariatur. Officia facere provident, earum corrupti eaque quis eveniet dolorum impedit
                             </p>
                            <div class="btn btn-secondary text-capitalize d-flex justify-content-center my-4 py-3"> <a class="text-white" href="maadigardens.html"> Click here for more details </div></a>
@@ -350,14 +352,14 @@
 
  <section id="alba-sky">
     <div class=" d-flex flex-row justify-content-start justify-content-md-center justify-content-lg-start my-5 p-sm-4 p-md-5 col-12">
-      <div class="inner-content p-1 pb-4 px-2 col-md-6 my-5">
+      <div class="inner-content p-1 pb-4 px-2 col-md-6 my-5" data-aos="fade-right"  data-aos-duration="1000" data-aos-delay="300">
         <span class="block block-span text-white text-uppercase fs-4">About Us</span>
-      <p class="fs-6">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad corporis quia, quis eligendi officiis quos a nobis totam 
+      <p class="fs-6 sans-serif-font">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad corporis quia, quis eligendi officiis quos a nobis totam 
         veritatis optio perferendis explicabo praesentium impedit eos ea eveniet consequatur. Est provident velit sapiente error non a et ut doloribus,
         dolorem sit quibusdam itaque, temporibus recusandae consequuntur autem quaerat dolore iusto molestiae!
       </p>
 
-      <p class="fs-6">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad corporis quia, quis eligendi officiis quos a nobis totam 
+      <p class="fs-6 sans-serif-font">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad corporis quia, quis eligendi officiis quos a nobis totam 
         veritatis optio perferendis explicabo praesentium impedit eos ea eveniet consequatur. Est provident velit sapiente error non a et ut doloribus,
         dolorem sit quibusdam itaque, temporibus recusandae consequuntur autem quaerat dolore iusto molestiae!
       </p>
@@ -375,38 +377,38 @@
 
     <!--INFORMATION, GOALS AND DESCRIPTIONS -->
     <div class="albums-container22 container container-fluid mb-5 ">
-        <div class="display-1 text-center mt-5 mb-5 home-secondary-color text-uppercase cinzel-font">Our Services</div>
+        <div class="display-1 text-center mt-5 mb-5 home-secondary-color text-uppercase cinzel-font" data-aos="fade-right"  data-aos-duration="1100">Our Services</div>
         <!--3 HORIZONTAL SERVICES-->
-            <div class="gallery-div container "> 
-              <div class="container-fluid col-lg-4 col-md-8 mb-5  d-flex justify-content-center">
+            <div class="gallery-div container" > 
+              <div class="container-fluid col-lg-4 col-md-8 mb-5  d-flex justify-content-center" data-aos="fade-up" data-aos-duration="900">
                 <div class="card justify-content-center align-items-center" style="max-width: 24rem;">                   
                   <img src="Images/icons8-clock-256(1).png" style="max-width: 140px; max-height: 140px;" class="card-img-top" alt="..."/>
                   <div class="card-body">
-                    <h5 class="card-title text-capitalize home-gold-color">on time deliverables</h5>
-                    <p class="card-text home-main-color">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title home-gold-color">on time deliverables</h5>
+                    <p class="card-text home-main-color sans-serif-font">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     
                   </div>
                 </div>
               </div>
 
-              <div class="container-fluid col-lg-4 col-md-8 mb-5 d-flex justify-content-center">
+              <div class="container-fluid col-lg-4 col-md-8 mb-5 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="900">
                 <div class="card justify-content-center align-items-center" style="max-width: 24rem;">                   
                    <img src="Images/icons8-privacy-96.png" style="max-width: 140px; max-height: 140px;" class="card-img-top" alt="..."/>
                     <div class="card-body">
-                        <h5 class="card-title text-capitalize home-gold-color">high privacy</h5>
-                        <p class="card-text home-main-color">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title home-gold-color">high privacy</h5>
+                        <p class="card-text home-main-color sans-serif-font">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         
                     </div>
                 </div>
              </div>
 
 
-              <div class="container-fluid col-lg-4 col-md-8 mb-5 d-flex justify-content-center">
+              <div class="container-fluid col-lg-4 col-md-8 mb-5 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="900">
                   <div class="card justify-content-center align-items-center" style="max-width: 24rem;">                   
                     <img src="Images/icons8-home-256.png" style="max-width: 140px; max-height: 140px;" class="card-img-top" alt="..."/>
                     <div class="card-body">
-                        <h5 class="card-title text-capitalize home-gold-color">modern concepts</h5>
-                        <p class="card-text home-main-color">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title home-gold-color">modern concepts</h5>
+                        <p class="card-text home-main-color sans-serif-font">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                        
                     </div>
                 </div>       
@@ -420,35 +422,35 @@
     <div class="albums-container22 container container-fluid mb-5">
         <!--3 HORIZONTAL SERVICES-->
             <div class="gallery-div container"> 
-              <div class="container-fluid col-lg-4 col-md-8 mb-5  d-flex justify-content-center">
+              <div class="container-fluid col-lg-4 col-md-8 mb-5  d-flex justify-content-center" data-aos="fade-up" data-aos-duration="900">
                 <div class="card justify-content-center align-items-center" style="max-width: 24rem;">                   
                   <img src="Images/icons8-location-96.png" style="max-width: 140px; max-height: 140px;" class="card-img-top" alt="..."/>
                   <div class="card-body">
-                    <h5 class="card-title text-capitalize home-gold-color">best locations</h5>
-                    <p class="card-text home-main-color">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title home-gold-color">best locations</h5>
+                    <p class="card-text home-main-color sans-serif-font">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                   
                   </div>
                 </div>
               </div>
 
-              <div class="container-fluid col-lg-4 col-md-8 mb-5 d-flex justify-content-center">
+              <div class="container-fluid col-lg-4 col-md-8 mb-5 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="900">
                 <div class="card justify-content-center align-items-center" style="max-width: 24rem;">                   
                    <img src="Images/icons8-expand-96.png" style="max-width: 140px; max-height: 140px;" class="card-img-top" alt="..."/>
                     <div class="card-body">
-                        <h5 class="card-title text-capitalize home-gold-color">areas fits all needs</h5>
-                        <p class="card-text home-main-color">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title home-gold-color">areas fits all needs</h5>
+                        <p class="card-text home-main-color sans-serif-font">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                            
                     </div>
                 </div>
              </div>
 
 
-              <div class="container-fluid col-lg-4 col-md-8 mb-5 d-flex justify-content-center">
+              <div class="container-fluid col-lg-4 col-md-8 mb-5 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="900">
                   <div class="card justify-content-center align-items-center" style="max-width: 24rem;">                   
                     <img src="Images/icons8-coins-96.png" style="max-width: 140px; max-height: 140px;" class="card-img-top" alt="..."/>
                     <div class="card-body">
-                        <h5 class="card-title text-capitalize home-gold-color"> ability for installments</h5>
-                        <p class="card-text home-main-color">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title home-gold-color"> ability for installments</h5>
+                        <p class="card-text home-main-color sans-serif-font">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                          
                     </div>
                 </div>       
@@ -462,8 +464,8 @@
     <!--MISSION, VISION, GOALS CARD GROUP CONTAINER-->
     <div class="card-group row d-flex justify-content-center">
       <!--FIRST CARD-->
-        <div class="col col-12 col-md-6 col-lg-4">
-          <div class="card">
+        <div class="col col-12 col-md-6 col-lg-4" data-aos="zoom-in"  data-aos-duration="800" data-aos-delay="150" >
+          <div class="card" >
             <img src="Images/cards/image-card.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title home-secondary-color text-uppercase text-center ">Our Mission</h5>
@@ -484,7 +486,7 @@
           </div>
         </div>
 
-    <div class="col col-12 col-md-6 col-lg-4">
+    <div class="col col-12 col-md-6 col-lg-4" data-aos="zoom-in"  data-aos-duration="800" data-aos-delay="300">
           <div class="card">
             <img src="Images/cards/shot 8.jpg" class="" alt="...">
             <div class="card-body">
@@ -497,7 +499,7 @@
           </div>
     </div>
 
-      <div class="col col-12 col-md-8 col-lg-4 my-4 ">
+      <div class="col col-12 col-md-8 col-lg-4 my-4 " data-aos="zoom-in"  data-aos-duration="800" data-aos-delay="600">
           <div class="card">
             <img src="Images/cards/7.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -514,14 +516,7 @@
 
 
 
-
-
-
-
-
-
-
-<div class="registeration container container-fluid col-12 col-md-8 col-lg-6 my-3">
+<div class="registeration container container-fluid col-10 col-md-8 col-lg-6 mb-3">
    <p class="home-secondary-color"> please fill in the registeration form below to get all of the updates for our projects</p>
 </div>
 
@@ -645,9 +640,9 @@
   </footer>
 
 <!-- End of footer-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>  
 <script src="Bootstrap/js/bootstrap.min.js"></script>
-
 
  <!--TIPPY LINKS TOOLTIPS -->
  <script src="https://unpkg.com/@popperjs/core@2"></script>
@@ -665,6 +660,12 @@
      window.alert('Registered Successfuly!')
    }
 </script> 
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
 
